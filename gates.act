@@ -1,7 +1,7 @@
 import "globals.act";
 import "channel.act";
 
-
+//inv
 defproc inv (bool in, out)
 {
 	prs {
