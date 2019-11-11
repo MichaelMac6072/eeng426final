@@ -1,0 +1,100 @@
+import "globals.act";
+import "channel.act";
+
+
+defproc inv (bool in, out)
+{
+	prs {
+		in -> out-
+		~in -> out+
+	}
+}
+
+defproc xor2(bool a, b, out)
+{
+	bool _a, _b;
+        spec {
+        exclhi(a,_a)
+        excllo(a,_a)
+        exclhi(b,_b)
+        excllo(b,_b)
+        }
+	prs{
+	a => _a-
+	b => _b-
+	~a & ~_b -> out+
+	~_a & ~b -> out+
+	a & b -> out-
+	_a & _b -> out-
+	}
+
+}
+
+defproc and2 (bool a, b, out)
+{
+	bool _out;
+	inv inva;
+
+
+	prs {
+		a & b -> _out-
+		~(a & b) -> _out+
+		
+	}
+	inva.in=_out;
+	inva.out=out;
+}
+
+defproc and3 (bool a, b, c, out)
+{
+	bool _out;
+	prs {
+		a & b & c -> _out-
+		~(a & b & c) -> _out+
+		_out=>out-
+	}
+}
+
+defproc and4 (bool a, b, c, d, out)
+{
+	bool _out;
+	prs {
+		a & b & c & d-> _out-
+		~(a & b & c & d) -> _out+
+		_out=>out-
+	}
+}
+
+defproc nand2 (bool a, b, out)
+{
+
+	prs {
+		a & b -> out-
+		~(a & b) -> out+
+	}
+}
+
+
+
+defproc or2 (bool a, b, out)
+{
+	bool _out;
+	prs{
+
+	a | b -> _out-
+	~(a|b) -> _out+
+	_out => out-
+
+	}
+
+}
+
+
+
+defproc nor4 (bool a, b, c, d, out)
+{
+	prs {
+		a | b | c | d -> out-
+		~(a | b | c | d) -> out+
+	}
+}
