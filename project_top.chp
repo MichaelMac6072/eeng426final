@@ -50,11 +50,19 @@ chp {
 	[] (#I & ~i) -> (i:=1,i_turn := turn); turn := ~turn
 	[] #RESET -> a:=0 , a_turn := 0, b:= 0, b_turn := 0, c := 0, c_turn := 0, d := 0, d_turn := 0, e:= 0, e_turn := 0, f := 0, f_turn := 0, g:=0 , g_turn := 0, h:=0 , h_turn := 0, i:=0 , i_turn := 0, turn:= 0, end := 0
 	];
+	win(
+	
+	
 	// Determining win condition
-	[
-	[]
-	[]
-	[] (a & b & c & d & e & f & g & h & i)
+	
+	[ ((a & ~a_turn & b & ~b_turn & c & ~c_turn) | (a & ~a_turn & e & ~e_turn & i & ~i_turn) | (a & ~a_turn & d & ~d_turn & g & ~g_turn) | (b & ~b_turn & e & ~e_turn & h & ~h_turn) | (d & ~d_turn & e & ~e_turn & f & ~f_turn) | (g & ~g_turn & h & ~h_turn & i & ~i_turn) | (c & ~c_turn & f & ~f_turn & i & ~i_turn) | (c & ~c_turn & e & ~e_turn & g & ~g_turn)) -> end := 1
+	// X wins
+	[] ((a & a_turn & b & b_turn & c & c_turn) | (a & a_turn & e & e_turn & i & i_turn) | (a & a_turn & d & d_turn & g & g_turn) | (b & b_turn & e & e_turn & h & h_turn) | (d & d_turn & e & e_turn & f & f_turn) | (g & g_turn & h & h_turn & i & i_turn) | (c & c_turn & f & f_turn & i & i_turn) | (c & c_turn & e & e_turn & g & g_turn)) -> end := 2
+	// O wins
+	[] (a & b & c & d & e & f & g & h & i) -> end := 3
+	// Draw
 	[] else -> skip
 	]
+	
+]
 }
