@@ -1,0 +1,3 @@
+* Idea: "turn" is an XORing of all the filled tiles together.
+   A high reset would pull all the fill variables down, thus setting
+   "turn" back to 0.

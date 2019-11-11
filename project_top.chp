@@ -1,0 +1,60 @@
+/* variable declarations */
+vars {
+  int<1> turn;
+  int<2> end;
+  int<1> a;
+  int<1> a_turn;
+  int<1> b;
+  int<1> b_turn;
+  int<1> c;
+  int<1> c_turn;
+  int<1> d;
+  int<1> d_turn;
+  int<1> e;
+  int<1> e_turn;
+  int<1> f;
+  int<1> f_turn;
+  int<1> g;
+  int<1> g_turn;
+  int<1> h;
+  int<1> h_turn;
+  int<1> i;
+  int<1> i_turn;
+  int<1> x_win;
+  int<1> o_win;
+  chan<1> A;
+  chan<1> B;
+  chan<1> C;
+  chan<1> D;
+  chan<1> E;
+  chan<1> F;
+  chan<1> G;
+  chan<1> H;
+  chan<1> I;
+  chan<1> RESET;
+}
+
+/* chp program */
+chp {
+*[
+	
+	// Player moves
+	[ (#A & ~a) -> (a:=1,a_turn := turn); turn := ~turn
+	[] (#B & ~b) -> (b:=1,b_turn := turn); turn := ~turn
+	[] (#C & ~c) -> (c:=1,c_turn := turn); turn := ~turn
+	[] (#D & ~d) -> (d:=1,d_turn := turn); turn := ~turn
+	[] (#E & ~e) -> (e:=1,e_turn := turn); turn := ~turn
+	[] (#F & ~f) -> (f:=1,f_turn := turn); turn := ~turn
+	[] (#G & ~g) -> (g:=1,g_turn := turn); turn := ~turn
+	[] (#H & ~h) -> (h:=1,h_turn := turn); turn := ~turn
+	[] (#I & ~i) -> (i:=1,i_turn := turn); turn := ~turn
+	[] #RESET -> a:=0 , a_turn := 0, b:= 0, b_turn := 0, c := 0, c_turn := 0, d := 0, d_turn := 0, e:= 0, e_turn := 0, f := 0, f_turn := 0, g:=0 , g_turn := 0, h:=0 , h_turn := 0, i:=0 , i_turn := 0, turn:= 0, end := 0
+	];
+	// Determining win condition
+	[
+	[]
+	[]
+	[] (a & b & c & d & e & f & g & h & i)
+	[] else -> skip
+	]
+}
