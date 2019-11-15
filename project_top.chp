@@ -20,6 +20,7 @@ vars {
   int<1> h_turn;
   int<1> i;
   int<1> i_turn;
+  int<2> end;
   int<1> x_win;
   int<1> o_win;
   chan<1> A;
@@ -32,6 +33,7 @@ vars {
   chan<1> H;
   chan<1> I;
   chan<1> RESET;
+  chan<2> WIN;
 }
 
 /* chp program */
@@ -39,21 +41,31 @@ chp {
 *[
 	
 	// Player moves
-	[ (#A & ~a) -> (a:=1,a_turn := turn); turn := ~turn
-	[] (#B & ~b) -> (b:=1,b_turn := turn); turn := ~turn
-	[] (#C & ~c) -> (c:=1,c_turn := turn); turn := ~turn
-	[] (#D & ~d) -> (d:=1,d_turn := turn); turn := ~turn
-	[] (#E & ~e) -> (e:=1,e_turn := turn); turn := ~turn
-	[] (#F & ~f) -> (f:=1,f_turn := turn); turn := ~turn
-	[] (#G & ~g) -> (g:=1,g_turn := turn); turn := ~turn
-	[] (#H & ~h) -> (h:=1,h_turn := turn); turn := ~turn
-	[] (#I & ~i) -> (i:=1,i_turn := turn); turn := ~turn
-	[] #RESET -> a:=0 , a_turn := 0, b:= 0, b_turn := 0, c := 0, c_turn := 0, d := 0, d_turn := 0, e:= 0, e_turn := 0, f := 0, f_turn := 0, g:=0 , g_turn := 0, h:=0 , h_turn := 0, i:=0 , i_turn := 0, turn:= 0, end := 0
+	[ (#A & ~a) -> (a:=1, a_turn := turn); turn := ~turn
+	[] (#B & ~b) -> (b:=1, b_turn := turn); turn := ~turn
+	[] (#C & ~c) -> (c:=1, c_turn := turn); turn := ~turn
+	[] (#D & ~d) -> (d:=1, d_turn := turn); turn := ~turn
+	[] (#E & ~e) -> (e:=1, e_turn := turn); turn := ~turn
+	[] (#F & ~f) -> (f:=1, f_turn := turn); turn := ~turn
+	[] (#G & ~g) -> (g:=1, g_turn := turn); turn := ~turn
+	[] (#H & ~h) -> (h:=1, h_turn := turn); turn := ~turn
+	[] (#I & ~i) -> (i:=1, i_turn := turn); turn := ~turn
+	[] #RESET -> a:=0 , a_turn := 0, b:= 0, b_turn := 0, c := 0, c_turn := 0, d := 0, d_turn := 0, e:= 0, e_turn := 0, f := 0, f_turn := 0, g:=0 , g_turn := 0, h:=0 , h_turn := 0, i:=0 , i_turn := 0, turn:= 0, x_win = 0, o_win = 0, end := 0
 	];
-	win(
-	
 	
 	// Determining win condition
+
+
+	/*
+	(a & b & c) | (a & e & i) | (a & d & g) | (b & e & h) | (d & e & f) | (g & h & i) | (c & f & i) | (c & e & g) -> 3inarow := 1;
+
+	3inarow & ((a_turn & b_turn & c_turn) | (a_turn & e_turn & i_turn) | (a_turn & d_turn & g_turn) | (b_turn & e_turn & h_turn) | (d_turn & e_turn & f_turn) | (g_turn & h_turn & i_turn) | (c_turn & f_turn & i_turn) | (c_turn & e_turn & g_turn)) -> o_win := 1;
+
+	3inarow & ~o_win -> x_win := 1
+
+	(a & b & c & d & e & f & g & h & i) & ~3inarow -> tie := 1;
+
+	*/
 	
 	[ ((a & ~a_turn & b & ~b_turn & c & ~c_turn) | (a & ~a_turn & e & ~e_turn & i & ~i_turn) | (a & ~a_turn & d & ~d_turn & g & ~g_turn) | (b & ~b_turn & e & ~e_turn & h & ~h_turn) | (d & ~d_turn & e & ~e_turn & f & ~f_turn) | (g & ~g_turn & h & ~h_turn & i & ~i_turn) | (c & ~c_turn & f & ~f_turn & i & ~i_turn) | (c & ~c_turn & e & ~e_turn & g & ~g_turn)) -> end := 1
 	// X wins

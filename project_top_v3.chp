@@ -1,0 +1,148 @@
+/* variable declarations */
+vars {
+  int<1> turn;
+  int<1> a;
+  int<1> a_x;
+  int<1> a_o;
+  int<1> b;
+  int<1> b_x;
+  int<1> b_o;
+  int<1> c;
+  int<1> c_x;
+  int<1> c_o;
+  int<1> d;
+  int<1> d_x;
+  int<1> d_o;
+  int<1> e;
+  int<1> e_x;
+  int<1> e_o;
+  int<1> f;
+  int<1> f_x;
+  int<1> f_o;
+  int<1> g;
+  int<1> g_x;
+  int<1> g_o;
+  int<1> h;
+  int<1> h_x;
+  int<1> h_o;
+  int<1> i;
+  int<1> i_x;
+  int<1> i_o;
+
+  int<1> a_reset;
+  int<1> b_reset;
+  int<1> c_reset;
+  int<1> d_reset;
+  int<1> e_reset;
+  int<1> f_reset;
+  int<1> g_reset;
+  int<1> h_reset;
+  int<1> i_reset;
+
+  int<1> x1_win;
+  int<1> x2_win;
+  int<1> x3_win;
+  int<1> x4_win;
+  int<1> x5_win;
+  int<1> x6_win;
+  int<1> x7_win;
+  int<1> x8_win;
+
+  int<1> o1_win;
+  int<1> o2_win;
+  int<1> o3_win;
+  int<1> o4_win;
+  int<1> o5_win;
+  int<1> o6_win;
+  int<1> o7_win;
+  int<1> o8_win;
+
+  int<1> draw;
+  int<1> x_win;
+  int<1> o_win;
+
+  chan<1> A;
+  chan<1> B;
+  chan<1> C;
+  chan<1> D;
+  chan<1> E;
+  chan<1> F;
+  chan<1> G;
+  chan<1> H;
+  chan<1> I;
+  chan<1> RESET;
+  chan<1> X_WIN;
+  chan<1> O_WIN;
+  chan<1> DRAW;
+}
+
+/* chp program */
+chp {
+*[
+	
+	// Player moves
+	[ (#A) -> [(turn = 0 & a_x = 0 & a_o = 0) -> a_x := 1 [] (turn = 1 & a_x = 0 & a_o = 0) -> a_o := 1 [] else -> skip]; a := 1; turn := ~turn
+	[] (#B) -> [(turn = 0 & b_x = 0 & b_o = 0) -> b_x := 1 [] (turn = 1 & b_x = 0 & b_o = 0) -> b_o := 1 [] else -> skip]; b := 1; turn := ~turn
+	[] (#C) -> [(turn = 0 & c_x = 0 & c_o = 0) -> c_x := 1 [] (turn = 1 & c_x = 0 & c_o = 0) -> c_o := 1 [] else -> skip]; c := 1; turn := ~turn
+	[] (#D) -> [(turn = 0 & d_x = 0 & d_o = 0) -> d_x := 1 [] (turn = 1 & d_x = 0 & d_o = 0) -> d_o := 1 [] else -> skip]; d := 1; turn := ~turn
+	[] (#E) -> [(turn = 0 & e_x = 0 & e_o = 0) -> e_x := 1 [] (turn = 1 & e_x = 0 & e_o = 0) -> e_o := 1 [] else -> skip]; e := 1; turn := ~turn
+	[] (#F) -> [(turn = 0 & f_x = 0 & f_o = 0) -> f_x := 1 [] (turn = 1 & f_x = 0 & f_o = 0) -> f_o := 1 [] else -> skip]; f := 1; turn := ~turn
+	[] (#G) -> [(turn = 0 & g_x = 0 & g_o = 0) -> g_x := 1 [] (turn = 1 & g_x = 0 & g_o = 0) -> g_o := 1 [] else -> skip]; g := 1; turn := ~turn
+	[] (#H) -> [(turn = 0 & h_x = 0 & h_o = 0) -> h_x := 1 [] (turn = 1 & h_x = 0 & h_o = 0) -> h_o := 1 [] else -> skip]; h := 1; turn := ~turn
+	[] (#I) -> [(turn = 0 & i_x = 0 & i_o = 0) -> i_x := 1 [] (turn = 1 & i_x = 0 & i_o = 0) -> i_o := 1 [] else -> skip]; i := 1; turn := ~turn
+	[] #RESET -> (a_reset := 1, b_reset := 1, c_reset := 1, d_reset := 1, e_reset := 1, f_reset := 1, g_reset := 1, h_reset := 1, i_reset := 1, turn := 0, draw := 0, x_win := 0, o_win := 0); (X_WIN!x_win, O_WIN!o_win, DRAW!draw) 
+	];
+
+	//Buffered reset of squares
+
+	([a_reset = 1 -> (a_x := 0, a_o := 0); a_reset := 0 [] else -> skip],	
+	[b_reset = 1 -> (b_x := 0, b_o := 0); a_reset := 0 [] else -> skip],
+	[c_reset = 1 -> (c_x := 0, c_o := 0); a_reset := 0 [] else -> skip],	
+	[d_reset = 1 -> (d_x := 0, d_o := 0); a_reset := 0 [] else -> skip],
+	[e_reset = 1 -> (e_x := 0, e_o := 0); a_reset := 0 [] else -> skip],
+	[f_reset = 1 -> (f_x := 0, f_o := 0); a_reset := 0 [] else -> skip],
+	[g_reset = 1 -> (g_x := 0, g_o := 0); a_reset := 0 [] else -> skip],
+	[h_reset = 1 -> (h_x := 0, h_o := 0); a_reset := 0 [] else -> skip],
+	[i_reset = 1 -> (i_x := 0, i_o := 0); a_reset := 0 [] else -> skip]);
+
+	//Win conditions
+
+	//First, see if either X or O got three in a row
+	
+	
+	[
+	(a_x = 1 & b_x = 1 & c_x = 1) -> x1_win := 1
+	[] (a_x = 1 & d_x = 1 & g_x = 1) -> x2_win := 1
+	[] (a_x = 1 & e_x = 1 & i_x = 1) -> x3_win := 1
+	[] (b_x = 1 & e_x = 1 & h_x = 1) -> x4_win := 1
+	[] (d_x = 1 & e_x = 1 & f_x = 1) -> x5_win := 1
+	[] (g_x = 1 & h_x = 1 & i_x = 1) -> x6_win := 1
+	[] (c_x = 1 & e_x = 1 & g_x = 1) -> x7_win := 1
+	[] (c_x = 1 & f_x = 1 & i_x = 1) -> x8_win := 1
+	[] (a_o = 1 & b_o = 1 & c_o = 1) -> o1_win := 1
+	[] (a_o = 1 & d_o = 1 & g_o = 1) -> o2_win := 1
+	[] (a_o = 1 & e_o = 1 & i_o = 1) -> o3_win := 1
+	[] (b_o = 1 & e_o = 1 & h_o = 1) -> o4_win := 1
+	[] (d_o = 1 & e_o = 1 & f_o = 1) -> o5_win := 1
+	[] (g_o = 1 & h_o = 1 & i_o = 1) -> o6_win := 1
+	[] (c_o = 1 & e_o = 1 & g_o = 1) -> o7_win := 1
+	[] (c_o = 1 & f_o = 1 & i_o = 1) -> o8_win := 1
+	[] else -> skip
+	];
+	
+	
+
+	[(x1_win = 1| x2_win = 1 | x3_win = 1 | x4_win = 1 | x5_win = 1 | x6_win = 1 | x7_win = 1 | x8_win = 1) -> x_win := 1; X_WIN!x_win
+	[] (o1_win = 1| o2_win = 1 | o3_win = 1| o4_win = 1 | o5_win = 1 | o6_win = 1 | o7_win = 1 | o8_win = 1) -> o_win := 1; O_WIN!o_win
+	];
+	
+	
+	// Check for draw
+	
+	[(a = 1 & b = 1 & c = 1 & d = 1 & e = 1 & f = 1 & g = 1 & h = 1 & i = 1 & x_win = 0 & o_win = 0) -> draw := 1; DRAW!draw
+	[] else -> skip
+	]
+	
+	
+]
+}
