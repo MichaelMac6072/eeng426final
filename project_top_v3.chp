@@ -1,7 +1,7 @@
 /* variable declarations */
 vars {
   int<1> turn;
-  int<1> _turn;
+  //int<1> _turn;
 
   int<1> a;
   int<1> a_x;
@@ -89,6 +89,11 @@ vars {
   int<1> o_win_1;
   int<1> o_win_2;
 
+  int<1> row_1;
+  int<1> row_2;
+  int<1> row_3;
+  int<1> full;
+
   int<1> draw;
   int<1> x_win;
   int<1> o_win;
@@ -146,7 +151,6 @@ chp {
 	[] #RESET -> (a_reset := 1, b_reset := 1, c_reset := 1, d_reset := 1, e_reset := 1, f_reset := 1, g_reset := 1, h_reset := 1, i_reset := 1, turn := 0, draw := 0, x_win := 0, o_win := 0); (X_WIN!x_win, O_WIN!o_win, DRAW!draw) 
 	];
 
-	_turn := turn;
 
 	//Buffered reset of squares
 
@@ -185,20 +189,35 @@ chp {
 	
 	
 
-	x_win_1 := or4(x1_win,x2_win,x3_win,x4_win), x_win_2 := or4(x5_win,x6_win,x7_win,x8_win);
-	o_win_1 := or4(o1_win,o2_win,o3_win,o4_win), o_win_2 := or4(o5_win,o6_win,o7_win,o8_win);
+	x_win_1 := or4_1(x1_win,x2_win,x3_win,x4_win), x_win_2 := or4_1(x5_win,x6_win,x7_win,x8_win);
+	o_win_1 := or4_1(o1_win,o2_win,o3_win,o4_win), o_win_2 := or4_1(o5_win,o6_win,o7_win,o8_win);
+	
+	x_win := or_1(x_win_1,x_win_2);
+	o_win := or_1(o_win_1,o_win_2);
 
-	[x_win_1 | x_win_2 -> x_win := 1; X_WIN!x_win
-	[] o_win_1 | o_win_2 -> o_win := 1; O_WIN!o_win
-	];
+	row_1 := and3_1(a,b,c),
+	row_2 := and3_1(d,e,f),
+	row_3 := and3_1(g,h,i),
+	full := and3_1(row_1,row_2,row_f3);
+	draw := nor3_negfirst_1(full,x_win,o_win);
+	
+	
+
+	[  x_win -> X_WIN!x_win
+	[] o_win -> O_WIN!o_win
+	[] draw -> DRAW!draw
+	[] else -> skip
+	]
 	
 	
 	// Check for draw
 	
+
+	/*
 	[(a = 1 & b = 1 & c = 1 & d = 1 & e = 1 & f = 1 & g = 1 & h = 1 & i = 1 & x_win = 0 & o_win = 0) -> draw := 1; DRAW!draw
 	[] else -> skip
 	]
-	
+	*/
 	
 ]
 }
