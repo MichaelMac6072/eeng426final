@@ -14,6 +14,34 @@ import "channel.act";
 /* 
  * Variable initialization
  */
+
+
+defproc inv (bool in, out)
+{
+	prs {
+		in -> out-
+		~in -> out+
+	}
+}
+
+defproc delaybuf(bool in, out)
+{
+  bool _x;
+  prs {
+     in => _x-
+     _x => out-
+  }
+}
+
+template<pint D>
+defproc delay (bool in, out)
+{
+  delaybuf d[D];
+  (i:D-1:d[i].out=d[i+1].in;)
+  d[0].in = in;
+  d[D-1].out = out;
+}
+
 defproc syn_var_init_true (dualrail v)
 {
   prs {
@@ -154,12 +182,36 @@ defproc syn_expr_and (dualrail in1, in2; dualrail out)
 /* 2-port AND function */
 defproc and_1 (dualrail in1, in2; dualrail out)
 {
-	syn_expr_and(in1,in2,out);
+	syn_expr_and and(in1,in2,out);
 }
+
+defproc bundled_and_1(bool go_r; dualrail x; dualrail y; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  (x.t & y.t) => _result-
+	  _result => result-
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
 
 
 /* 4-port AND */
-defproc and3_1 (dualrail in1, in2, in3, in4; dualrail out)
+defproc and4_1 (dualrail in1, in2, in3, in4; dualrail out)
 {
 	dualrail first, second;
 	syn_expr_and one(in1,in2,first);
@@ -167,8 +219,34 @@ defproc and3_1 (dualrail in1, in2, in3, in4; dualrail out)
 	syn_expr_and three(first,second,out);
 }
 
+
+
+defproc bundled_and4_1(bool go_r; dualrail w; dualrail x; dualrail y; dualrail z; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  w.t & x.t & y.t & z.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
 /* 3-port AND */
-defproc and4_1 (dualrail in1, in2,in3; dualrail out)
+defproc and3_1 (dualrail in1, in2,in3; dualrail out)
 {
   _dualrail _out;
   prs {
@@ -181,6 +259,29 @@ defproc and4_1 (dualrail in1, in2,in3; dualrail out)
     _out.f => out.f-
   }
 }
+
+defproc bundled_and3_1(bool go_r; dualrail x; dualrail y; dualrail z; dualrail out)
+{
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+   bool result, _result;
+
+	prs{
+		d.out => _dout-
+		
+	  x.t & y.t & z.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
 
 /* OR */
 defproc syn_expr_or (dualrail in1, in2; dualrail out)
@@ -196,11 +297,36 @@ defproc syn_expr_or (dualrail in1, in2; dualrail out)
   }
 }
 
+
 /* 2-port OR function */
 defproc or_1(dualrail in1, in2; dualrail out)
 {
-	syn_expr_or(in1,in2,out);
+	syn_expr_or or(in1,in2,out);
 }
+
+defproc bundled_or_1 (bool go_r; dualrail x; dualrail y; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  (x.t | y.t) => _result-
+	  _result => result-
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
 
 /* 4-port OR */
 defproc or4_1 (dualrail in1, in2, in3, in4; dualrail out)
@@ -210,6 +336,30 @@ defproc or4_1 (dualrail in1, in2, in3, in4; dualrail out)
 	syn_expr_or two(in3,in4,second);
 	syn_expr_or three(first,second,out);
 }
+
+defproc bundled_or4_1 (bool go_r;dualrail w; dualrail x; dualrail y; dualrail z; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  (w.t | x.t | y.t | z.t) => _result-
+	  _result => result-
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
 
 /* 3-port OR */
 defproc or3_1 (dualrail in1, in2, in3; dualrail out)
@@ -225,6 +375,30 @@ defproc or3_1 (dualrail in1, in2, in3; dualrail out)
     }
 }
 
+defproc bundled_or3_1 (bool go_r;dualrail x; dualrail y; dualrail z; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  (x.t | y.t | z.t) => _result-
+	  _result => result-
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
 /* 3-port NOR */
 defproc nor3_1 (dualrail in1, in2, in3; dualrail out)
 {
@@ -239,6 +413,31 @@ defproc nor3_1 (dualrail in1, in2, in3; dualrail out)
     }
 }
 
+defproc bundled_nor3_1 (bool go_r;dualrail x; dualrail y; dualrail z; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  (x.t | y.t | z.t) => result-
+	  result => _result-
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+
 /* NOT */
 defproc syn_expr_not (dualrail in; dualrail out)
 {
@@ -247,12 +446,35 @@ defproc syn_expr_not (dualrail in; dualrail out)
 }
 
 /* 3-port NOR with negated first input */
-defproc and3_negfirst_1 (dualrail in1, in2,in3; dualrail out)
+defproc nor3_negfirst_1 (dualrail in1, in2,in3; dualrail out)
 {	dualrail _in1;
-	syn_expr_not(in1,_in1);
-	nor3_1(_in1,in2,in3,out);
+	syn_expr_not in1_inv(in1,_in1);
+	nor3_1 result(_in1,in2,in3,out);
 }
 
+defproc bundled_nor3_negfirst_1 (bool go_r; dualrail z; dualrail y; dualrail x; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+   bool result, _result;
+
+	prs{
+		d.out => _dout-
+		
+	  z.f | y.t | x.t => result-
+		~result => _result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
 
 defproc syn_or2 (bool x, y, out)
 {
@@ -333,3 +555,250 @@ defproc syn_par (a1of1 go; a1of1 s1, s2)
    _c => go.a-
   }
 }
+
+
+
+/*	Location-specific logical function	*/
+
+/* 4-port ANDs */
+defproc bundled_and4_x1_1(bool go_r; dualrail x1_win; dualrail x2_win; dualrail x3_win; dualrail x4_win; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  x1_win.t & x2_win.t & x3_win.t & x4_win.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+defproc bundled_and4_o1_1(bool go_r; dualrail o1_win; dualrail o2_win; dualrail o3_win; dualrail o4_win; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  o1_win.t & o2_win.t & o3_win.t & o4_win.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+defproc bundled_and4_x2_1(bool go_r; dualrail x5_win; dualrail x6_win; dualrail x7_win; dualrail x8_win; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  x5_win.t & x6_win.t & x7_win.t & x8_win.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+defproc bundled_and4_o2_1(bool go_r; dualrail o5_win; dualrail o6_win; dualrail o7_win; dualrail o8_win; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  o5_win.t & o6_win.t & o7_win.t & o8_win.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+/* 2-port ORs */
+
+defproc bundled_or_x_1 (bool go_r; dualrail x_win_1; dualrail x_win_2; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  (x_win_1.t | x_win_2.t) => _result-
+	  _result => result-
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+defproc bundled_or_o_1 (bool go_r; dualrail o_win_1; dualrail o_win_2; dualrail out)
+{
+
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+
+	bool result, _result;
+	prs{
+		d.out => _dout-
+		
+	  (o_win_1.t | o_win_2.t) => _result-
+	  _result => result-
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+/* 3-port ANDs */
+defproc bundled_and3_row1_1(bool go_r; dualrail a; dualrail b; dualrail c; dualrail out)
+{
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+   bool result, _result;
+
+	prs{
+		d.out => _dout-
+		
+	  a.t & b.t & c.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+} 
+
+defproc bundled_and3_row2_1(bool go_r; dualrail d; dualrail e; dualrail f; dualrail out)
+{
+   delay<4> del;
+   bool _dout;
+   del.in = go_r;
+   bool result, _result;
+
+	prs{
+		del.out => _dout-
+		
+	  d.t & e.t & f.t => _result-
+		~_result => result+
+		 
+	  del.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      del.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+}
+
+defproc bundled_and3_row3_1(bool go_r; dualrail g; dualrail h; dualrail i; dualrail out)
+{
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+   bool result, _result;
+
+	prs{
+		d.out => _dout-
+		
+	  g.t & h.t & i.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+}
+
+defproc bundled_and3_full_1(bool go_r; dualrail row_1; dualrail row_2; dualrail row_3; dualrail out)
+{
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+   bool result, _result;
+
+	prs{
+		d.out => _dout-
+		
+	  row_1.t & row_2.t & row_3.t => _result-
+		~_result => result+
+		 
+	  d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+      
+      _dout -> out.f-
+      _dout -> out.t-
+	}
+}
+
+
+
