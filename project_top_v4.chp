@@ -209,7 +209,7 @@ chp {
 	row_2 := and3_1(d,e,f),
 	row_3 := and3_1(g,h,i),
 	full := and3_1(row_1,row_2,row_3);
-	(x:=full, y:=x_win, z:=o_win); draw := nor3_negfirst_1(full,x_win,o_win);
+	draw := nor3_negfirst_1(full,x_win,o_win);
 	
 	
 
