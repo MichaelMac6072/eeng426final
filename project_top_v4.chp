@@ -1,0 +1,225 @@
+/* variable declarations */
+vars {
+  int<1> turn;
+  //int<1> _turn;
+
+  int<1> a;
+  int<1> a_x;
+  int<1> a_o;
+  int<1> A_probe;
+  int<1> a_ready_x;
+  int<1> a_ready_o;
+
+  int<1> b;
+  int<1> b_x;
+  int<1> b_o;
+  int<1> B_probe;
+  int<1> b_ready_x;
+  int<1> b_ready_o;
+
+  int<1> c;
+  int<1> c_x;
+  int<1> c_o;
+  int<1> C_probe;
+  int<1> c_ready_x;
+  int<1> c_ready_o;
+
+  int<1> d;
+  int<1> d_x;
+  int<1> d_o;
+  int<1> D_probe;
+  int<1> d_ready_x;
+  int<1> d_ready_o;
+
+  int<1> e;
+  int<1> e_x;
+  int<1> e_o;
+  int<1> E_probe;
+  int<1> e_ready_x;
+  int<1> e_ready_o;
+
+  int<1> f;
+  int<1> f_x;
+  int<1> f_o;
+  int<1> F_probe;
+  int<1> f_ready_x;
+  int<1> f_ready_o;
+
+  int<1> g;
+  int<1> g_x;
+  int<1> g_o;
+  int<1> G_probe;
+  int<1> g_ready_x;
+  int<1> g_ready_o;
+
+  int<1> h;
+  int<1> h_x;
+  int<1> h_o;
+  int<1> H_probe;
+  int<1> h_ready_x;
+  int<1> h_ready_o;
+
+  int<1> i;
+  int<1> i_x;
+  int<1> i_o;
+  int<1> I_probe;
+  int<1> i_ready_x;
+  int<1> i_ready_o;
+
+  int<1> RESET_probe;
+  int<1> a_reset;
+  int<1> b_reset;
+  int<1> c_reset;
+  int<1> d_reset;
+  int<1> e_reset;
+  int<1> f_reset;
+  int<1> g_reset;
+  int<1> h_reset;
+  int<1> i_reset;
+
+  int<1> x1_win;
+  int<1> x2_win;
+  int<1> x3_win;
+  int<1> x4_win;
+  int<1> x5_win;
+  int<1> x6_win;
+  int<1> x7_win;
+  int<1> x8_win;
+  int<1> x_win_1;
+  int<1> x_win_2;
+
+  int<1> o1_win;
+  int<1> o2_win;
+  int<1> o3_win;
+  int<1> o4_win;
+  int<1> o5_win;
+  int<1> o6_win;
+  int<1> o7_win;
+  int<1> o8_win;
+  int<1> o_win_1;
+  int<1> o_win_2;
+
+  int<1> row_1;
+  int<1> row_2;
+  int<1> row_3;
+  int<1> full;
+
+  int<1> draw;
+  int<1> x_win;
+  int<1> o_win;
+
+  // For computational purposes
+  int<1> w;
+  int<1> x;
+  int<1> y;
+  int<1> z;
+
+  chan<1> A;
+  chan<1> B;
+  chan<1> C;
+  chan<1> D;
+  chan<1> E;
+  chan<1> F;
+  chan<1> G;
+  chan<1> H;
+  chan<1> I;
+  chan<1> RESET;
+  chan<1> X_WIN;
+  chan<1> O_WIN;
+  chan<1> DRAW;
+}
+
+/* chp program */
+chp {
+*[
+	//Ready conditions. Looking at how the lab3 binary works, these will all be 0 upon initialization. 
+	
+	a_ready_x := nor3_1(a_x,a_o,turn), a_ready_o := nor3_negfirst_1(turn,a_x,a_o),
+	b_ready_x := nor3_1(b_x,b_o,turn), b_ready_o := nor3_negfirst_1(turn,b_o,b_x),
+	c_ready_x := nor3_1(c_x,c_o,turn), c_ready_o := nor3_negfirst_1(turn,c_o,c_x),
+	d_ready_x := nor3_1(d_x,d_o,turn), d_ready_o := nor3_negfirst_1(turn,d_o,d_x),
+	e_ready_x := nor3_1(e_x,e_o,turn), e_ready_o := nor3_negfirst_1(turn,e_o,e_x),
+	f_ready_x := nor3_1(f_x,f_o,turn), f_ready_o := nor3_negfirst_1(turn,f_o,f_x),
+	g_ready_x := nor3_1(g_x,g_o,turn), g_ready_o := nor3_negfirst_1(turn,g_o,g_x),
+	h_ready_x := nor3_1(h_x,h_o,turn), h_ready_o := nor3_negfirst_1(turn,h_o,h_x),
+	i_ready_x := nor3_1(i_x,i_o,turn), i_ready_o := nor3_negfirst_1(turn,i_o,i_x),
+	
+	// Wait until a button is pushed.
+	(A?A_probe, B?B_probe, C?C_probe, D?D_probe, E?E_probe, F?F_probe, G?G_probe, H?H_probe, I?I_probe, RESET?RESET_probe);
+
+	// Player moves
+	[A_probe -> [a_ready_x -> a_x := 1 [] a_ready_o -> a_o := 1 [] else -> skip]; a := 1; turn := ~turn
+	[] B_probe -> [b_ready_x -> b_x := 1 [] b_ready_o -> b_o := 1 [] else -> skip]; b := 1; turn := ~turn
+	[] C_probe -> [c_ready_x -> c_x := 1 [] c_ready_o -> c_o := 1 [] else -> skip]; c := 1; turn := ~turn
+	[] D_probe -> [d_ready_x -> d_x := 1 [] d_ready_o -> d_o := 1 [] else -> skip]; d := 1; turn := ~turn
+	[] E_probe -> [e_ready_x -> e_x := 1 [] e_ready_o -> e_o := 1 [] else -> skip]; e := 1; turn := ~turn
+	[] F_probe -> [f_ready_x -> f_x := 1 [] f_ready_o -> f_o := 1 [] else -> skip]; f := 1; turn := ~turn
+	[] G_probe -> [g_ready_x -> g_x := 1 [] g_ready_o -> g_o := 1 [] else -> skip]; g := 1; turn := ~turn
+	[] H_probe -> [h_ready_x -> h_x := 1 [] h_ready_o -> h_o := 1 [] else -> skip]; h := 1; turn := ~turn
+	[] I_probe -> [i_ready_x -> i_x := 1 [] i_ready_o -> i_o := 1 [] else -> skip]; i := 1; turn := ~turn
+	[] RESET_probe -> (a_reset := 1, b_reset := 1, c_reset := 1, d_reset := 1, e_reset := 1, f_reset := 1, g_reset := 1, h_reset := 1, i_reset := 1, turn := 0, draw := 0, x_win := 0, o_win := 0); (X_WIN!x_win, O_WIN!o_win, DRAW!draw) 
+	];
+
+
+	//Buffered reset of squares
+
+	([a_reset -> (a_x := 0, a_o := 0, a:= 0); a_reset := 0 [] else -> skip],	
+	[b_reset -> (b_x := 0, b_o := 0, b:= 0); a_reset := 0 [] else -> skip],
+	[c_reset -> (c_x := 0, c_o := 0, c:= 0); a_reset := 0 [] else -> skip],	
+	[d_reset -> (d_x := 0, d_o := 0, d:= 0); a_reset := 0 [] else -> skip],
+	[e_reset -> (e_x := 0, e_o := 0, e:= 0); a_reset := 0 [] else -> skip],
+	[f_reset -> (f_x := 0, f_o := 0, f:= 0); a_reset := 0 [] else -> skip],
+	[g_reset -> (g_x := 0, g_o := 0, g:= 0); a_reset := 0 [] else -> skip],
+	[h_reset -> (h_x := 0, h_o := 0, h:= 0); a_reset := 0 [] else -> skip],
+	[i_reset -> (i_x := 0, i_o := 0, i:= 0); a_reset := 0 [] else -> skip]);
+
+	//Win conditions
+
+	//First, see if either X or O got three in a row
+	
+	(
+	 x1_win := and3_1(a_x,b_x,c_x),	
+	 x2_win := and3_1(a_x,d_x,g_x),
+	 x3_win := and3_1(a_x,e_x,i_x), 
+	 x4_win := and3_1(b_x,e_x,h_x),
+	 x5_win := and3_1(d_x,e_x,f_x),
+	 x6_win := and3_1(g_x,h_x,i_x),
+	 x7_win := and3_1(c_x,e_x,g_x),
+	 x8_win := and3_1(c_x,f_x,i_x),
+
+	 o1_win := and3_1(a_o,b_o,c_o),
+	 o2_win := and3_1(a_o,d_o,g_o),
+	 o3_win := and3_1(a_o,e_o,i_o), 
+	 o4_win := and3_1(b_o,e_o,h_o),
+	 o5_win := and3_1(d_o,e_o,f_o),
+	 o6_win := and3_1(g_o,h_o,i_o),
+	 o7_win := and3_1(c_o,e_o,g_o),
+	 o8_win := and3_1(c_o,f_o,i_o)	);
+	
+	
+
+	x_win_1 := or4_1(x1_win,x2_win,x3_win,x4_win), x_win_2 := or4_1(x5_win,x6_win,x7_win,x8_win),
+	o_win_1 := or4_1(o1_win,o2_win,o3_win,o4_win), o_win_2 := or4_1(o5_win,o6_win,o7_win,o8_win),
+	
+	x_win := or_1(x_win_1,x_win_2),
+	o_win := or_1(o_win_1,o_win_2),
+
+	// If not, see if all squares are full for the draw condition.
+	row_1 := and3_1(a,b,c),
+	row_2 := and3_1(d,e,f),
+	row_3 := and3_1(g,h,i),
+	full := and3_1(row_1,row_2,row_3);
+	(x:=full, y:=x_win, z:=o_win); draw := nor3_negfirst_1(full,x_win,o_win);
+	
+	
+
+	[  x_win -> X_WIN!x_win
+	[] o_win -> O_WIN!o_win
+	[] draw -> DRAW!draw
+	[] else -> skip
+	]
+	
+	
+	
+]
+}
