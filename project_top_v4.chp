@@ -1,7 +1,7 @@
 /* variable declarations */
 vars {
   int<1> turn;
-  //int<1> _turn;
+  int<1> init;
 
   int<1> a;
   int<1> a_x;
@@ -9,7 +9,7 @@ vars {
   int<1> A_probe;
   int<1> a_ready_x;
   int<1> a_ready_o;
-
+	
   int<1> b;
   int<1> b_x;
   int<1> b_o;
@@ -23,7 +23,7 @@ vars {
   int<1> C_probe;
   int<1> c_ready_x;
   int<1> c_ready_o;
-
+	
   int<1> d;
   int<1> d_x;
   int<1> d_o;
@@ -113,10 +113,12 @@ vars {
   int<1> x;
   int<1> y;
   int<1> z;
+  
 
   chan<1> A;
   chan<1> B;
   chan<1> C;
+	
   chan<1> D;
   chan<1> E;
   chan<1> F;
@@ -127,13 +129,17 @@ vars {
   chan<1> X_WIN;
   chan<1> O_WIN;
   chan<1> DRAW;
+
 }
 
 /* chp program */
 chp {
 *[
+	/*
 	//Ready conditions. Looking at how the lab3 binary works, these will all be 0 upon initialization. 
 	
+	[~init -> turn := 0, init := 1[] else -> skip];
+
 	a_ready_x := nor3_1(a_x,a_o,turn), a_ready_o := nor3_negfirst_1(turn,a_x,a_o),
 	b_ready_x := nor3_1(b_x,b_o,turn), b_ready_o := nor3_negfirst_1(turn,b_o,b_x),
 	c_ready_x := nor3_1(c_x,c_o,turn), c_ready_o := nor3_negfirst_1(turn,c_o,c_x),
@@ -145,8 +151,11 @@ chp {
 	i_ready_x := nor3_1(i_x,i_o,turn), i_ready_o := nor3_negfirst_1(turn,i_o,i_x),
 	
 	// Wait until a button is pushed.
-	(A?A_probe, B?B_probe, C?C_probe, D?D_probe, E?E_probe, F?F_probe, G?G_probe, H?H_probe, I?I_probe, RESET?RESET_probe);
-
+	*/
+	
+	A?A_probe, B?B_probe, C?C_probe, D?D_probe, E?E_probe, F?F_probe, G?G_probe, H?H_probe, I?I_probe, RESET?RESET_probe
+	
+	/*
 	// Player moves
 	[A_probe -> [a_ready_x -> a_x := 1 [] a_ready_o -> a_o := 1 [] else -> skip]; a := 1; turn := ~turn
 	[] B_probe -> [b_ready_x -> b_x := 1 [] b_ready_o -> b_o := 1 [] else -> skip]; b := 1; turn := ~turn
@@ -219,7 +228,7 @@ chp {
 	[] else -> skip
 	]
 	
-	
+	*/
 	
 ]
 }

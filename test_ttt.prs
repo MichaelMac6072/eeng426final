@@ -1,0 +1,1348 @@
+"Reset"->"ttt.var_o4_win.v.t"-
+"ttt.var_o4_win.v.f"->"ttt.var_o4_win.v.t"-
+"ttt.var_o4_win.v.t"->"ttt.var_o4_win.v.f"-
+weak ~"ttt.var_o4_win.v.t"->"ttt.var_o4_win.v.f"+
+weak ~"ttt.var_o4_win.v.f"->"ttt.var_o4_win.v.t"+
+= "ttt.var_o4_win.v.d[0]" "ttt.var_o4_win.v.f"
+= "ttt.var_o4_win.v.d[1]" "ttt.var_o4_win.v.t"
+= "ttt.var_o4_win.v.d[0]" "ttt.var_o4_win.v.f"
+= "ttt.var_o4_win.v.d[1]" "ttt.var_o4_win.v.t"
+= "ttt.c_3.a" "ttt.s_3.s1.a"
+= "ttt.c_3.r" "ttt.s_3.s1.r"
+= "ttt.c_3.a" "ttt.s_2.go.a"
+= "ttt.c_3.r" "ttt.s_2.go.r"
+= "ttt.c_3.a" "ttt.chan_B.a"
+"Reset"->"ttt.var_i_ready_x.v.t"-
+"ttt.var_i_ready_x.v.f"->"ttt.var_i_ready_x.v.t"-
+"ttt.var_i_ready_x.v.t"->"ttt.var_i_ready_x.v.f"-
+weak ~"ttt.var_i_ready_x.v.t"->"ttt.var_i_ready_x.v.f"+
+weak ~"ttt.var_i_ready_x.v.f"->"ttt.var_i_ready_x.v.t"+
+= "ttt.var_i_ready_x.v.d[0]" "ttt.var_i_ready_x.v.f"
+= "ttt.var_i_ready_x.v.d[1]" "ttt.var_i_ready_x.v.t"
+= "ttt.var_i_ready_x.v.d[0]" "ttt.var_i_ready_x.v.f"
+= "ttt.var_i_ready_x.v.d[1]" "ttt.var_i_ready_x.v.t"
+"Reset"->"ttt.var_h_ready_o.v.t"-
+"ttt.var_h_ready_o.v.f"->"ttt.var_h_ready_o.v.t"-
+"ttt.var_h_ready_o.v.t"->"ttt.var_h_ready_o.v.f"-
+weak ~"ttt.var_h_ready_o.v.t"->"ttt.var_h_ready_o.v.f"+
+weak ~"ttt.var_h_ready_o.v.f"->"ttt.var_h_ready_o.v.t"+
+= "ttt.var_h_ready_o.v.d[0]" "ttt.var_h_ready_o.v.f"
+= "ttt.var_h_ready_o.v.d[1]" "ttt.var_h_ready_o.v.t"
+= "ttt.var_h_ready_o.v.d[0]" "ttt.var_h_ready_o.v.f"
+= "ttt.var_h_ready_o.v.d[1]" "ttt.var_h_ready_o.v.t"
+= "ttt.chan_F.d[0]" "ttt.chan_F.f"
+= "ttt.chan_F.d[1]" "ttt.chan_F.t"
+= "ttt.chan_F.a" "ttt.s_10.in.a"
+= "ttt.chan_F.f" "ttt.s_10.in.f"
+= "ttt.chan_F.t" "ttt.s_10.in.t"
+= "ttt.chan_F.d[0]" "ttt.s_10.in.d[0]"
+= "ttt.chan_F.d[1]" "ttt.s_10.in.d[1]"
+= "ttt.chan_F.d[0]" "ttt.chan_F.f"
+= "ttt.chan_F.d[1]" "ttt.chan_F.t"
+= "ttt.chan_G.d[0]" "ttt.chan_G.f"
+= "ttt.chan_G.d[1]" "ttt.chan_G.t"
+= "ttt.chan_G.a" "ttt.s_12.in.a"
+= "ttt.chan_G.f" "ttt.s_12.in.f"
+= "ttt.chan_G.t" "ttt.s_12.in.t"
+= "ttt.chan_G.d[0]" "ttt.s_12.in.d[0]"
+= "ttt.chan_G.d[1]" "ttt.s_12.in.d[1]"
+= "ttt.chan_G.d[0]" "ttt.chan_G.f"
+= "ttt.chan_G.d[1]" "ttt.chan_G.t"
+= "ttt.chan_O_WIN.d[0]" "ttt.chan_O_WIN.f"
+= "ttt.chan_O_WIN.d[1]" "ttt.chan_O_WIN.t"
+"Reset"->"ttt.var_d_ready_o.v.t"-
+"ttt.var_d_ready_o.v.f"->"ttt.var_d_ready_o.v.t"-
+"ttt.var_d_ready_o.v.t"->"ttt.var_d_ready_o.v.f"-
+weak ~"ttt.var_d_ready_o.v.t"->"ttt.var_d_ready_o.v.f"+
+weak ~"ttt.var_d_ready_o.v.f"->"ttt.var_d_ready_o.v.t"+
+= "ttt.var_d_ready_o.v.d[0]" "ttt.var_d_ready_o.v.f"
+= "ttt.var_d_ready_o.v.d[1]" "ttt.var_d_ready_o.v.t"
+= "ttt.var_d_ready_o.v.d[0]" "ttt.var_d_ready_o.v.f"
+= "ttt.var_d_ready_o.v.d[1]" "ttt.var_d_ready_o.v.t"
+"Reset"->"ttt.var_z.v.t"-
+"ttt.var_z.v.f"->"ttt.var_z.v.t"-
+"ttt.var_z.v.t"->"ttt.var_z.v.f"-
+weak ~"ttt.var_z.v.t"->"ttt.var_z.v.f"+
+weak ~"ttt.var_z.v.f"->"ttt.var_z.v.t"+
+= "ttt.var_z.v.d[0]" "ttt.var_z.v.f"
+= "ttt.var_z.v.d[1]" "ttt.var_z.v.t"
+= "ttt.var_z.v.d[0]" "ttt.var_z.v.f"
+= "ttt.var_z.v.d[1]" "ttt.var_z.v.t"
+"Reset"->"ttt.var_c_x.v.t"-
+"ttt.var_c_x.v.f"->"ttt.var_c_x.v.t"-
+"ttt.var_c_x.v.t"->"ttt.var_c_x.v.f"-
+weak ~"ttt.var_c_x.v.t"->"ttt.var_c_x.v.f"+
+weak ~"ttt.var_c_x.v.f"->"ttt.var_c_x.v.t"+
+= "ttt.var_c_x.v.d[0]" "ttt.var_c_x.v.f"
+= "ttt.var_c_x.v.d[1]" "ttt.var_c_x.v.t"
+= "ttt.var_c_x.v.d[0]" "ttt.var_c_x.v.f"
+= "ttt.var_c_x.v.d[1]" "ttt.var_c_x.v.t"
+"ttt.s_9.s1.a"&"ttt.s_9.s2.a"->"ttt.s_9._c"-
+~"ttt.s_9.s1.a"&~"ttt.s_9.s2.a"->"ttt.s_9._c"+
+"ttt.s_9._c"->"ttt.s_9.go.a"-
+~("ttt.s_9._c")->"ttt.s_9.go.a"+
+= "ttt.s_9.go.r" "ttt.s_9.s2.r"
+= "ttt.s_9.go.r" "ttt.s_9.s1.r"
+"Reset"->"ttt.var_E_probe.v.t"-
+"ttt.var_E_probe.v.f"->"ttt.var_E_probe.v.t"-
+"ttt.var_E_probe.v.t"->"ttt.var_E_probe.v.f"-
+weak ~"ttt.var_E_probe.v.t"->"ttt.var_E_probe.v.f"+
+weak ~"ttt.var_E_probe.v.f"->"ttt.var_E_probe.v.t"+
+= "ttt.var_E_probe.v.d[0]" "ttt.var_E_probe.v.f"
+= "ttt.var_E_probe.v.d[1]" "ttt.var_E_probe.v.t"
+= "ttt.var_E_probe.v.d[0]" "ttt.var_E_probe.v.f"
+= "ttt.var_E_probe.v.d[1]" "ttt.var_E_probe.v.t"
+"Reset"->"ttt.var_x3_win.v.t"-
+"ttt.var_x3_win.v.f"->"ttt.var_x3_win.v.t"-
+"ttt.var_x3_win.v.t"->"ttt.var_x3_win.v.f"-
+weak ~"ttt.var_x3_win.v.t"->"ttt.var_x3_win.v.f"+
+weak ~"ttt.var_x3_win.v.f"->"ttt.var_x3_win.v.t"+
+= "ttt.var_x3_win.v.d[0]" "ttt.var_x3_win.v.f"
+= "ttt.var_x3_win.v.d[1]" "ttt.var_x3_win.v.t"
+= "ttt.var_x3_win.v.d[0]" "ttt.var_x3_win.v.f"
+= "ttt.var_x3_win.v.d[1]" "ttt.var_x3_win.v.t"
+"ttt.s_18.go.r"&"ttt.s_18._goa"&"ttt.s_18.in.t"->"ttt.s_18.v.f"-
+"ttt.s_18.go.r"&"ttt.s_18._goa"&"ttt.s_18.in.f"->"ttt.s_18.v.t"-
+"ttt.s_18.go.r"&("ttt.s_18.v.t"&"ttt.s_18.in.t"|"ttt.s_18.v.f"&"ttt.s_18.in.f")->"ttt.s_18._goa"-
+~"ttt.s_18.in.t"&~"ttt.s_18.in.f"&~"ttt.s_18.go.r"->"ttt.s_18._goa"+
+"Reset"|"ttt.s_18._goa"->"ttt.s_18.go.a"-
+~("Reset"|"ttt.s_18._goa")->"ttt.s_18.go.a"+
+= "ttt.s_18.v.d[0]" "ttt.s_18.v.f"
+= "ttt.s_18.v.d[1]" "ttt.s_18.v.t"
+= "ttt.s_18.v.d[0]" "ttt.s_18.v.f"
+= "ttt.s_18.v.d[1]" "ttt.s_18.v.t"
+= "ttt.s_18.go.a" "ttt.s_18.in.a"
+= "ttt.s_18.in.d[0]" "ttt.s_18.in.f"
+= "ttt.s_18.in.d[1]" "ttt.s_18.in.t"
+= "ttt.s_18.in.d[0]" "ttt.s_18.in.f"
+= "ttt.s_18.in.d[1]" "ttt.s_18.in.t"
+= "ttt.s_18.v.f" "ttt.var_RESET_probe.v.f"
+= "ttt.s_18.v.t" "ttt.var_RESET_probe.v.t"
+= "ttt.s_18.v.d[0]" "ttt.var_RESET_probe.v.d[0]"
+= "ttt.s_18.v.d[1]" "ttt.var_RESET_probe.v.d[1]"
+= "ttt.s_18.v.d[0]" "ttt.s_18.v.f"
+= "ttt.s_18.v.d[1]" "ttt.s_18.v.t"
+"ttt.s_13.s1.a"&"ttt.s_13.s2.a"->"ttt.s_13._c"-
+~"ttt.s_13.s1.a"&~"ttt.s_13.s2.a"->"ttt.s_13._c"+
+"ttt.s_13._c"->"ttt.s_13.go.a"-
+~("ttt.s_13._c")->"ttt.s_13.go.a"+
+= "ttt.s_13.go.r" "ttt.s_13.s2.r"
+= "ttt.s_13.go.r" "ttt.s_13.s1.r"
+"Reset"->"ttt.var_d_ready_x.v.t"-
+"ttt.var_d_ready_x.v.f"->"ttt.var_d_ready_x.v.t"-
+"ttt.var_d_ready_x.v.t"->"ttt.var_d_ready_x.v.f"-
+weak ~"ttt.var_d_ready_x.v.t"->"ttt.var_d_ready_x.v.f"+
+weak ~"ttt.var_d_ready_x.v.f"->"ttt.var_d_ready_x.v.t"+
+= "ttt.var_d_ready_x.v.d[0]" "ttt.var_d_ready_x.v.f"
+= "ttt.var_d_ready_x.v.d[1]" "ttt.var_d_ready_x.v.t"
+= "ttt.var_d_ready_x.v.d[0]" "ttt.var_d_ready_x.v.f"
+= "ttt.var_d_ready_x.v.d[1]" "ttt.var_d_ready_x.v.t"
+"Reset"->"ttt.var_B_probe.v.t"-
+"ttt.var_B_probe.v.f"->"ttt.var_B_probe.v.t"-
+"ttt.var_B_probe.v.t"->"ttt.var_B_probe.v.f"-
+weak ~"ttt.var_B_probe.v.t"->"ttt.var_B_probe.v.f"+
+weak ~"ttt.var_B_probe.v.f"->"ttt.var_B_probe.v.t"+
+= "ttt.var_B_probe.v.d[0]" "ttt.var_B_probe.v.f"
+= "ttt.var_B_probe.v.d[1]" "ttt.var_B_probe.v.t"
+= "ttt.var_B_probe.v.d[0]" "ttt.var_B_probe.v.f"
+= "ttt.var_B_probe.v.d[1]" "ttt.var_B_probe.v.t"
+"Reset"->"ttt.var_f.v.t"-
+"ttt.var_f.v.f"->"ttt.var_f.v.t"-
+"ttt.var_f.v.t"->"ttt.var_f.v.f"-
+weak ~"ttt.var_f.v.t"->"ttt.var_f.v.f"+
+weak ~"ttt.var_f.v.f"->"ttt.var_f.v.t"+
+= "ttt.var_f.v.d[0]" "ttt.var_f.v.f"
+= "ttt.var_f.v.d[1]" "ttt.var_f.v.t"
+= "ttt.var_f.v.d[0]" "ttt.var_f.v.f"
+= "ttt.var_f.v.d[1]" "ttt.var_f.v.t"
+"Reset"->"ttt.var_o_win_2.v.t"-
+"ttt.var_o_win_2.v.f"->"ttt.var_o_win_2.v.t"-
+"ttt.var_o_win_2.v.t"->"ttt.var_o_win_2.v.f"-
+weak ~"ttt.var_o_win_2.v.t"->"ttt.var_o_win_2.v.f"+
+weak ~"ttt.var_o_win_2.v.f"->"ttt.var_o_win_2.v.t"+
+= "ttt.var_o_win_2.v.d[0]" "ttt.var_o_win_2.v.f"
+= "ttt.var_o_win_2.v.d[1]" "ttt.var_o_win_2.v.t"
+= "ttt.var_o_win_2.v.d[0]" "ttt.var_o_win_2.v.f"
+= "ttt.var_o_win_2.v.d[1]" "ttt.var_o_win_2.v.t"
+= "ttt.c_6.a" "ttt.s_7.go.a"
+= "ttt.c_6.r" "ttt.s_7.go.r"
+= "ttt.c_6.a" "ttt.s_5.s2.a"
+= "ttt.c_6.r" "ttt.s_5.s2.r"
+"Reset"->"ttt.var_x7_win.v.t"-
+"ttt.var_x7_win.v.f"->"ttt.var_x7_win.v.t"-
+"ttt.var_x7_win.v.t"->"ttt.var_x7_win.v.f"-
+weak ~"ttt.var_x7_win.v.t"->"ttt.var_x7_win.v.f"+
+weak ~"ttt.var_x7_win.v.f"->"ttt.var_x7_win.v.t"+
+= "ttt.var_x7_win.v.d[0]" "ttt.var_x7_win.v.f"
+= "ttt.var_x7_win.v.d[1]" "ttt.var_x7_win.v.t"
+= "ttt.var_x7_win.v.d[0]" "ttt.var_x7_win.v.f"
+= "ttt.var_x7_win.v.d[1]" "ttt.var_x7_win.v.t"
+"Reset"->"ttt.var_o2_win.v.t"-
+"ttt.var_o2_win.v.f"->"ttt.var_o2_win.v.t"-
+"ttt.var_o2_win.v.t"->"ttt.var_o2_win.v.f"-
+weak ~"ttt.var_o2_win.v.t"->"ttt.var_o2_win.v.f"+
+weak ~"ttt.var_o2_win.v.f"->"ttt.var_o2_win.v.t"+
+= "ttt.var_o2_win.v.d[0]" "ttt.var_o2_win.v.f"
+= "ttt.var_o2_win.v.d[1]" "ttt.var_o2_win.v.t"
+= "ttt.var_o2_win.v.d[0]" "ttt.var_o2_win.v.f"
+= "ttt.var_o2_win.v.d[1]" "ttt.var_o2_win.v.t"
+"Reset"->"ttt.var_b_x.v.t"-
+"ttt.var_b_x.v.f"->"ttt.var_b_x.v.t"-
+"ttt.var_b_x.v.t"->"ttt.var_b_x.v.f"-
+weak ~"ttt.var_b_x.v.t"->"ttt.var_b_x.v.f"+
+weak ~"ttt.var_b_x.v.f"->"ttt.var_b_x.v.t"+
+= "ttt.var_b_x.v.d[0]" "ttt.var_b_x.v.f"
+= "ttt.var_b_x.v.d[1]" "ttt.var_b_x.v.t"
+= "ttt.var_b_x.v.d[0]" "ttt.var_b_x.v.f"
+= "ttt.var_b_x.v.d[1]" "ttt.var_b_x.v.t"
+= "ttt.c_13.a" "ttt.s_13.s1.a"
+= "ttt.c_13.r" "ttt.s_13.s1.r"
+= "ttt.c_13.a" "ttt.s_12.go.a"
+= "ttt.c_13.r" "ttt.s_12.go.r"
+= "ttt.c_13.a" "ttt.chan_G.a"
+"Reset"->"ttt.var_G_probe.v.t"-
+"ttt.var_G_probe.v.f"->"ttt.var_G_probe.v.t"-
+"ttt.var_G_probe.v.t"->"ttt.var_G_probe.v.f"-
+weak ~"ttt.var_G_probe.v.t"->"ttt.var_G_probe.v.f"+
+weak ~"ttt.var_G_probe.v.f"->"ttt.var_G_probe.v.t"+
+= "ttt.var_G_probe.v.d[0]" "ttt.var_G_probe.v.f"
+= "ttt.var_G_probe.v.d[1]" "ttt.var_G_probe.v.t"
+= "ttt.var_G_probe.v.d[0]" "ttt.var_G_probe.v.f"
+= "ttt.var_G_probe.v.d[1]" "ttt.var_G_probe.v.t"
+= "ttt.chan_DRAW.d[0]" "ttt.chan_DRAW.f"
+= "ttt.chan_DRAW.d[1]" "ttt.chan_DRAW.t"
+"Reset"->"ttt.var_i.v.t"-
+"ttt.var_i.v.f"->"ttt.var_i.v.t"-
+"ttt.var_i.v.t"->"ttt.var_i.v.f"-
+weak ~"ttt.var_i.v.t"->"ttt.var_i.v.f"+
+weak ~"ttt.var_i.v.f"->"ttt.var_i.v.t"+
+= "ttt.var_i.v.d[0]" "ttt.var_i.v.f"
+= "ttt.var_i.v.d[1]" "ttt.var_i.v.t"
+= "ttt.var_i.v.d[0]" "ttt.var_i.v.f"
+= "ttt.var_i.v.d[1]" "ttt.var_i.v.t"
+"Reset"->"ttt.var_a_ready_x.v.t"-
+"ttt.var_a_ready_x.v.f"->"ttt.var_a_ready_x.v.t"-
+"ttt.var_a_ready_x.v.t"->"ttt.var_a_ready_x.v.f"-
+weak ~"ttt.var_a_ready_x.v.t"->"ttt.var_a_ready_x.v.f"+
+weak ~"ttt.var_a_ready_x.v.f"->"ttt.var_a_ready_x.v.t"+
+= "ttt.var_a_ready_x.v.d[0]" "ttt.var_a_ready_x.v.f"
+= "ttt.var_a_ready_x.v.d[1]" "ttt.var_a_ready_x.v.t"
+= "ttt.var_a_ready_x.v.d[0]" "ttt.var_a_ready_x.v.f"
+= "ttt.var_a_ready_x.v.d[1]" "ttt.var_a_ready_x.v.t"
+"Reset"->"ttt.var_x4_win.v.t"-
+"ttt.var_x4_win.v.f"->"ttt.var_x4_win.v.t"-
+"ttt.var_x4_win.v.t"->"ttt.var_x4_win.v.f"-
+weak ~"ttt.var_x4_win.v.t"->"ttt.var_x4_win.v.f"+
+weak ~"ttt.var_x4_win.v.f"->"ttt.var_x4_win.v.t"+
+= "ttt.var_x4_win.v.d[0]" "ttt.var_x4_win.v.f"
+= "ttt.var_x4_win.v.d[1]" "ttt.var_x4_win.v.t"
+= "ttt.var_x4_win.v.d[0]" "ttt.var_x4_win.v.f"
+= "ttt.var_x4_win.v.d[1]" "ttt.var_x4_win.v.t"
+= "ttt.chan_B.d[0]" "ttt.chan_B.f"
+= "ttt.chan_B.d[1]" "ttt.chan_B.t"
+= "ttt.chan_B.a" "ttt.s_2.in.a"
+= "ttt.chan_B.f" "ttt.s_2.in.f"
+= "ttt.chan_B.t" "ttt.s_2.in.t"
+= "ttt.chan_B.d[0]" "ttt.s_2.in.d[0]"
+= "ttt.chan_B.d[1]" "ttt.s_2.in.d[1]"
+= "ttt.chan_B.d[0]" "ttt.chan_B.f"
+= "ttt.chan_B.d[1]" "ttt.chan_B.t"
+= "ttt.c_7.a" "ttt.s_7.s1.a"
+= "ttt.c_7.r" "ttt.s_7.s1.r"
+= "ttt.c_7.a" "ttt.s_6.go.a"
+= "ttt.c_7.r" "ttt.s_6.go.r"
+= "ttt.c_7.a" "ttt.chan_D.a"
+"Reset"->"ttt.var_h_reset.v.t"-
+"ttt.var_h_reset.v.f"->"ttt.var_h_reset.v.t"-
+"ttt.var_h_reset.v.t"->"ttt.var_h_reset.v.f"-
+weak ~"ttt.var_h_reset.v.t"->"ttt.var_h_reset.v.f"+
+weak ~"ttt.var_h_reset.v.f"->"ttt.var_h_reset.v.t"+
+= "ttt.var_h_reset.v.d[0]" "ttt.var_h_reset.v.f"
+= "ttt.var_h_reset.v.d[1]" "ttt.var_h_reset.v.t"
+= "ttt.var_h_reset.v.d[0]" "ttt.var_h_reset.v.f"
+= "ttt.var_h_reset.v.d[1]" "ttt.var_h_reset.v.t"
+"Reset"->"ttt.var_i_reset.v.t"-
+"ttt.var_i_reset.v.f"->"ttt.var_i_reset.v.t"-
+"ttt.var_i_reset.v.t"->"ttt.var_i_reset.v.f"-
+weak ~"ttt.var_i_reset.v.t"->"ttt.var_i_reset.v.f"+
+weak ~"ttt.var_i_reset.v.f"->"ttt.var_i_reset.v.t"+
+= "ttt.var_i_reset.v.d[0]" "ttt.var_i_reset.v.f"
+= "ttt.var_i_reset.v.d[1]" "ttt.var_i_reset.v.t"
+= "ttt.var_i_reset.v.d[0]" "ttt.var_i_reset.v.f"
+= "ttt.var_i_reset.v.d[1]" "ttt.var_i_reset.v.t"
+"Reset"->"ttt.var_x_win.v.t"-
+"ttt.var_x_win.v.f"->"ttt.var_x_win.v.t"-
+"ttt.var_x_win.v.t"->"ttt.var_x_win.v.f"-
+weak ~"ttt.var_x_win.v.t"->"ttt.var_x_win.v.f"+
+weak ~"ttt.var_x_win.v.f"->"ttt.var_x_win.v.t"+
+= "ttt.var_x_win.v.d[0]" "ttt.var_x_win.v.f"
+= "ttt.var_x_win.v.d[1]" "ttt.var_x_win.v.t"
+= "ttt.var_x_win.v.d[0]" "ttt.var_x_win.v.f"
+= "ttt.var_x_win.v.d[1]" "ttt.var_x_win.v.t"
+= "ttt.c_17.a" "ttt.s_17.s1.a"
+= "ttt.c_17.r" "ttt.s_17.s1.r"
+= "ttt.c_17.a" "ttt.s_16.go.a"
+= "ttt.c_17.r" "ttt.s_16.go.r"
+= "ttt.c_17.a" "ttt.chan_I.a"
+"Reset"->"ttt.var_init.v.t"-
+"ttt.var_init.v.f"->"ttt.var_init.v.t"-
+"ttt.var_init.v.t"->"ttt.var_init.v.f"-
+weak ~"ttt.var_init.v.t"->"ttt.var_init.v.f"+
+weak ~"ttt.var_init.v.f"->"ttt.var_init.v.t"+
+= "ttt.var_init.v.d[0]" "ttt.var_init.v.f"
+= "ttt.var_init.v.d[1]" "ttt.var_init.v.t"
+= "ttt.var_init.v.d[0]" "ttt.var_init.v.f"
+= "ttt.var_init.v.d[1]" "ttt.var_init.v.t"
+= "ttt.go.a" "ttt.c_19.a"
+= "ttt.go.r" "ttt.c_19.r"
+= "ttt.go.r" "ttt.na_19.x"
+= "GND" "ttt.go.a"
+"Reset"->"ttt.var_x8_win.v.t"-
+"ttt.var_x8_win.v.f"->"ttt.var_x8_win.v.t"-
+"ttt.var_x8_win.v.t"->"ttt.var_x8_win.v.f"-
+weak ~"ttt.var_x8_win.v.t"->"ttt.var_x8_win.v.f"+
+weak ~"ttt.var_x8_win.v.f"->"ttt.var_x8_win.v.t"+
+= "ttt.var_x8_win.v.d[0]" "ttt.var_x8_win.v.f"
+= "ttt.var_x8_win.v.d[1]" "ttt.var_x8_win.v.t"
+= "ttt.var_x8_win.v.d[0]" "ttt.var_x8_win.v.f"
+= "ttt.var_x8_win.v.d[1]" "ttt.var_x8_win.v.t"
+"Reset"->"ttt.var_row_3.v.t"-
+"ttt.var_row_3.v.f"->"ttt.var_row_3.v.t"-
+"ttt.var_row_3.v.t"->"ttt.var_row_3.v.f"-
+weak ~"ttt.var_row_3.v.t"->"ttt.var_row_3.v.f"+
+weak ~"ttt.var_row_3.v.f"->"ttt.var_row_3.v.t"+
+= "ttt.var_row_3.v.d[0]" "ttt.var_row_3.v.f"
+= "ttt.var_row_3.v.d[1]" "ttt.var_row_3.v.t"
+= "ttt.var_row_3.v.d[0]" "ttt.var_row_3.v.f"
+= "ttt.var_row_3.v.d[1]" "ttt.var_row_3.v.t"
+= "ttt.c_0.a" "ttt.s_1.go.a"
+= "ttt.c_0.r" "ttt.s_1.go.r"
+= "ttt.c_0.r" "ttt.na_19.out"
+= "ttt.c_0.r" "ttt.gc_0.r"
+= "ttt.c_0.r" "ttt.c_2.r"
+= "ttt.c_0.r" "ttt.c_4.r"
+= "ttt.c_0.r" "ttt.c_6.r"
+= "ttt.c_0.r" "ttt.c_8.r"
+= "ttt.c_0.r" "ttt.c_10.r"
+= "ttt.c_0.r" "ttt.c_12.r"
+= "ttt.c_0.r" "ttt.c_14.r"
+= "ttt.c_0.r" "ttt.c_16.r"
+= "ttt.c_0.r" "ttt.c_18.r"
+= "ttt.c_0.r" "ttt.c_17.r"
+= "ttt.c_0.r" "ttt.c_15.r"
+= "ttt.c_0.r" "ttt.c_13.r"
+= "ttt.c_0.r" "ttt.c_11.r"
+= "ttt.c_0.r" "ttt.c_9.r"
+= "ttt.c_0.r" "ttt.c_7.r"
+= "ttt.c_0.r" "ttt.c_5.r"
+= "ttt.c_0.r" "ttt.c_3.r"
+= "ttt.c_0.r" "ttt.c_1.r"
+= "ttt.c_0.a" "ttt.na_19.y"
+= "ttt.c_0.a" "ttt.gc_0.t"
+= "ttt.c_16.a" "ttt.s_17.go.a"
+= "ttt.c_16.r" "ttt.s_17.go.r"
+= "ttt.c_16.a" "ttt.s_15.s2.a"
+= "ttt.c_16.r" "ttt.s_15.s2.r"
+"Reset"->"ttt.var_F_probe.v.t"-
+"ttt.var_F_probe.v.f"->"ttt.var_F_probe.v.t"-
+"ttt.var_F_probe.v.t"->"ttt.var_F_probe.v.f"-
+weak ~"ttt.var_F_probe.v.t"->"ttt.var_F_probe.v.f"+
+weak ~"ttt.var_F_probe.v.f"->"ttt.var_F_probe.v.t"+
+= "ttt.var_F_probe.v.d[0]" "ttt.var_F_probe.v.f"
+= "ttt.var_F_probe.v.d[1]" "ttt.var_F_probe.v.t"
+= "ttt.var_F_probe.v.d[0]" "ttt.var_F_probe.v.f"
+= "ttt.var_F_probe.v.d[1]" "ttt.var_F_probe.v.t"
+"Reset"->"ttt.var_x_win_2.v.t"-
+"ttt.var_x_win_2.v.f"->"ttt.var_x_win_2.v.t"-
+"ttt.var_x_win_2.v.t"->"ttt.var_x_win_2.v.f"-
+weak ~"ttt.var_x_win_2.v.t"->"ttt.var_x_win_2.v.f"+
+weak ~"ttt.var_x_win_2.v.f"->"ttt.var_x_win_2.v.t"+
+= "ttt.var_x_win_2.v.d[0]" "ttt.var_x_win_2.v.f"
+= "ttt.var_x_win_2.v.d[1]" "ttt.var_x_win_2.v.t"
+= "ttt.var_x_win_2.v.d[0]" "ttt.var_x_win_2.v.f"
+= "ttt.var_x_win_2.v.d[1]" "ttt.var_x_win_2.v.t"
+= "ttt.chan_I.d[0]" "ttt.chan_I.f"
+= "ttt.chan_I.d[1]" "ttt.chan_I.t"
+= "ttt.chan_I.a" "ttt.s_16.in.a"
+= "ttt.chan_I.f" "ttt.s_16.in.f"
+= "ttt.chan_I.t" "ttt.s_16.in.t"
+= "ttt.chan_I.d[0]" "ttt.s_16.in.d[0]"
+= "ttt.chan_I.d[1]" "ttt.s_16.in.d[1]"
+= "ttt.chan_I.d[0]" "ttt.chan_I.f"
+= "ttt.chan_I.d[1]" "ttt.chan_I.t"
+"ttt.s_15.s1.a"&"ttt.s_15.s2.a"->"ttt.s_15._c"-
+~"ttt.s_15.s1.a"&~"ttt.s_15.s2.a"->"ttt.s_15._c"+
+"ttt.s_15._c"->"ttt.s_15.go.a"-
+~("ttt.s_15._c")->"ttt.s_15.go.a"+
+= "ttt.s_15.go.r" "ttt.s_15.s2.r"
+= "ttt.s_15.go.r" "ttt.s_15.s1.r"
+"Reset"->"ttt.var_e_ready_o.v.t"-
+"ttt.var_e_ready_o.v.f"->"ttt.var_e_ready_o.v.t"-
+"ttt.var_e_ready_o.v.t"->"ttt.var_e_ready_o.v.f"-
+weak ~"ttt.var_e_ready_o.v.t"->"ttt.var_e_ready_o.v.f"+
+weak ~"ttt.var_e_ready_o.v.f"->"ttt.var_e_ready_o.v.t"+
+= "ttt.var_e_ready_o.v.d[0]" "ttt.var_e_ready_o.v.f"
+= "ttt.var_e_ready_o.v.d[1]" "ttt.var_e_ready_o.v.t"
+= "ttt.var_e_ready_o.v.d[0]" "ttt.var_e_ready_o.v.f"
+= "ttt.var_e_ready_o.v.d[1]" "ttt.var_e_ready_o.v.t"
+"Reset"->"ttt.var_f_ready_o.v.t"-
+"ttt.var_f_ready_o.v.f"->"ttt.var_f_ready_o.v.t"-
+"ttt.var_f_ready_o.v.t"->"ttt.var_f_ready_o.v.f"-
+weak ~"ttt.var_f_ready_o.v.t"->"ttt.var_f_ready_o.v.f"+
+weak ~"ttt.var_f_ready_o.v.f"->"ttt.var_f_ready_o.v.t"+
+= "ttt.var_f_ready_o.v.d[0]" "ttt.var_f_ready_o.v.f"
+= "ttt.var_f_ready_o.v.d[1]" "ttt.var_f_ready_o.v.t"
+= "ttt.var_f_ready_o.v.d[0]" "ttt.var_f_ready_o.v.f"
+= "ttt.var_f_ready_o.v.d[1]" "ttt.var_f_ready_o.v.t"
+"Reset"->"ttt.var_x_win_1.v.t"-
+"ttt.var_x_win_1.v.f"->"ttt.var_x_win_1.v.t"-
+"ttt.var_x_win_1.v.t"->"ttt.var_x_win_1.v.f"-
+weak ~"ttt.var_x_win_1.v.t"->"ttt.var_x_win_1.v.f"+
+weak ~"ttt.var_x_win_1.v.f"->"ttt.var_x_win_1.v.t"+
+= "ttt.var_x_win_1.v.d[0]" "ttt.var_x_win_1.v.f"
+= "ttt.var_x_win_1.v.d[1]" "ttt.var_x_win_1.v.t"
+= "ttt.var_x_win_1.v.d[0]" "ttt.var_x_win_1.v.f"
+= "ttt.var_x_win_1.v.d[1]" "ttt.var_x_win_1.v.t"
+"Reset"->"ttt.var_f_x.v.t"-
+"ttt.var_f_x.v.f"->"ttt.var_f_x.v.t"-
+"ttt.var_f_x.v.t"->"ttt.var_f_x.v.f"-
+weak ~"ttt.var_f_x.v.t"->"ttt.var_f_x.v.f"+
+weak ~"ttt.var_f_x.v.f"->"ttt.var_f_x.v.t"+
+= "ttt.var_f_x.v.d[0]" "ttt.var_f_x.v.f"
+= "ttt.var_f_x.v.d[1]" "ttt.var_f_x.v.t"
+= "ttt.var_f_x.v.d[0]" "ttt.var_f_x.v.f"
+= "ttt.var_f_x.v.d[1]" "ttt.var_f_x.v.t"
+"Reset"->"ttt.var_RESET_probe.v.t"-
+"ttt.var_RESET_probe.v.f"->"ttt.var_RESET_probe.v.t"-
+"ttt.var_RESET_probe.v.t"->"ttt.var_RESET_probe.v.f"-
+weak ~"ttt.var_RESET_probe.v.t"->"ttt.var_RESET_probe.v.f"+
+weak ~"ttt.var_RESET_probe.v.f"->"ttt.var_RESET_probe.v.t"+
+= "ttt.var_RESET_probe.v.d[0]" "ttt.var_RESET_probe.v.f"
+= "ttt.var_RESET_probe.v.d[1]" "ttt.var_RESET_probe.v.t"
+= "ttt.var_RESET_probe.v.d[0]" "ttt.var_RESET_probe.v.f"
+= "ttt.var_RESET_probe.v.d[1]" "ttt.var_RESET_probe.v.t"
+"Reset"->"ttt.var_a_x.v.t"-
+"ttt.var_a_x.v.f"->"ttt.var_a_x.v.t"-
+"ttt.var_a_x.v.t"->"ttt.var_a_x.v.f"-
+weak ~"ttt.var_a_x.v.t"->"ttt.var_a_x.v.f"+
+weak ~"ttt.var_a_x.v.f"->"ttt.var_a_x.v.t"+
+= "ttt.var_a_x.v.d[0]" "ttt.var_a_x.v.f"
+= "ttt.var_a_x.v.d[1]" "ttt.var_a_x.v.t"
+= "ttt.var_a_x.v.d[0]" "ttt.var_a_x.v.f"
+= "ttt.var_a_x.v.d[1]" "ttt.var_a_x.v.t"
+"Reset"->"ttt.var_d_o.v.t"-
+"ttt.var_d_o.v.f"->"ttt.var_d_o.v.t"-
+"ttt.var_d_o.v.t"->"ttt.var_d_o.v.f"-
+weak ~"ttt.var_d_o.v.t"->"ttt.var_d_o.v.f"+
+weak ~"ttt.var_d_o.v.f"->"ttt.var_d_o.v.t"+
+= "ttt.var_d_o.v.d[0]" "ttt.var_d_o.v.f"
+= "ttt.var_d_o.v.d[1]" "ttt.var_d_o.v.t"
+= "ttt.var_d_o.v.d[0]" "ttt.var_d_o.v.f"
+= "ttt.var_d_o.v.d[1]" "ttt.var_d_o.v.t"
+= "ttt.c_1.a" "ttt.s_1.s1.a"
+= "ttt.c_1.r" "ttt.s_1.s1.r"
+= "ttt.c_1.a" "ttt.s_0.go.a"
+= "ttt.c_1.r" "ttt.s_0.go.r"
+= "ttt.c_1.a" "ttt.chan_A.a"
+"ttt.s_14.go.r"&"ttt.s_14._goa"&"ttt.s_14.in.t"->"ttt.s_14.v.f"-
+"ttt.s_14.go.r"&"ttt.s_14._goa"&"ttt.s_14.in.f"->"ttt.s_14.v.t"-
+"ttt.s_14.go.r"&("ttt.s_14.v.t"&"ttt.s_14.in.t"|"ttt.s_14.v.f"&"ttt.s_14.in.f")->"ttt.s_14._goa"-
+~"ttt.s_14.in.t"&~"ttt.s_14.in.f"&~"ttt.s_14.go.r"->"ttt.s_14._goa"+
+"Reset"|"ttt.s_14._goa"->"ttt.s_14.go.a"-
+~("Reset"|"ttt.s_14._goa")->"ttt.s_14.go.a"+
+= "ttt.s_14.v.d[0]" "ttt.s_14.v.f"
+= "ttt.s_14.v.d[1]" "ttt.s_14.v.t"
+= "ttt.s_14.v.d[0]" "ttt.s_14.v.f"
+= "ttt.s_14.v.d[1]" "ttt.s_14.v.t"
+= "ttt.s_14.go.a" "ttt.s_14.in.a"
+= "ttt.s_14.in.d[0]" "ttt.s_14.in.f"
+= "ttt.s_14.in.d[1]" "ttt.s_14.in.t"
+= "ttt.s_14.in.d[0]" "ttt.s_14.in.f"
+= "ttt.s_14.in.d[1]" "ttt.s_14.in.t"
+= "ttt.s_14.v.f" "ttt.var_H_probe.v.f"
+= "ttt.s_14.v.t" "ttt.var_H_probe.v.t"
+= "ttt.s_14.v.d[0]" "ttt.var_H_probe.v.d[0]"
+= "ttt.s_14.v.d[1]" "ttt.var_H_probe.v.d[1]"
+= "ttt.s_14.v.d[0]" "ttt.s_14.v.f"
+= "ttt.s_14.v.d[1]" "ttt.s_14.v.t"
+= "ttt.c_11.a" "ttt.s_11.s1.a"
+= "ttt.c_11.r" "ttt.s_11.s1.r"
+= "ttt.c_11.a" "ttt.s_10.go.a"
+= "ttt.c_11.r" "ttt.s_10.go.r"
+= "ttt.c_11.a" "ttt.chan_F.a"
+"Reset"->"ttt.var_g_ready_x.v.t"-
+"ttt.var_g_ready_x.v.f"->"ttt.var_g_ready_x.v.t"-
+"ttt.var_g_ready_x.v.t"->"ttt.var_g_ready_x.v.f"-
+weak ~"ttt.var_g_ready_x.v.t"->"ttt.var_g_ready_x.v.f"+
+weak ~"ttt.var_g_ready_x.v.f"->"ttt.var_g_ready_x.v.t"+
+= "ttt.var_g_ready_x.v.d[0]" "ttt.var_g_ready_x.v.f"
+= "ttt.var_g_ready_x.v.d[1]" "ttt.var_g_ready_x.v.t"
+= "ttt.var_g_ready_x.v.d[0]" "ttt.var_g_ready_x.v.f"
+= "ttt.var_g_ready_x.v.d[1]" "ttt.var_g_ready_x.v.t"
+"Reset"->"ttt.var_c_o.v.t"-
+"ttt.var_c_o.v.f"->"ttt.var_c_o.v.t"-
+"ttt.var_c_o.v.t"->"ttt.var_c_o.v.f"-
+weak ~"ttt.var_c_o.v.t"->"ttt.var_c_o.v.f"+
+weak ~"ttt.var_c_o.v.f"->"ttt.var_c_o.v.t"+
+= "ttt.var_c_o.v.d[0]" "ttt.var_c_o.v.f"
+= "ttt.var_c_o.v.d[1]" "ttt.var_c_o.v.t"
+= "ttt.var_c_o.v.d[0]" "ttt.var_c_o.v.f"
+= "ttt.var_c_o.v.d[1]" "ttt.var_c_o.v.t"
+"Reset"->"ttt.var_a.v.t"-
+"ttt.var_a.v.f"->"ttt.var_a.v.t"-
+"ttt.var_a.v.t"->"ttt.var_a.v.f"-
+weak ~"ttt.var_a.v.t"->"ttt.var_a.v.f"+
+weak ~"ttt.var_a.v.f"->"ttt.var_a.v.t"+
+= "ttt.var_a.v.d[0]" "ttt.var_a.v.f"
+= "ttt.var_a.v.d[1]" "ttt.var_a.v.t"
+= "ttt.var_a.v.d[0]" "ttt.var_a.v.f"
+= "ttt.var_a.v.d[1]" "ttt.var_a.v.t"
+= "ttt.c_12.a" "ttt.s_13.go.a"
+= "ttt.c_12.r" "ttt.s_13.go.r"
+= "ttt.c_12.a" "ttt.s_11.s2.a"
+= "ttt.c_12.r" "ttt.s_11.s2.r"
+"Reset"->"ttt.var_o7_win.v.t"-
+"ttt.var_o7_win.v.f"->"ttt.var_o7_win.v.t"-
+"ttt.var_o7_win.v.t"->"ttt.var_o7_win.v.f"-
+weak ~"ttt.var_o7_win.v.t"->"ttt.var_o7_win.v.f"+
+weak ~"ttt.var_o7_win.v.f"->"ttt.var_o7_win.v.t"+
+= "ttt.var_o7_win.v.d[0]" "ttt.var_o7_win.v.f"
+= "ttt.var_o7_win.v.d[1]" "ttt.var_o7_win.v.t"
+= "ttt.var_o7_win.v.d[0]" "ttt.var_o7_win.v.f"
+= "ttt.var_o7_win.v.d[1]" "ttt.var_o7_win.v.t"
+"Reset"->"ttt.var_row_1.v.t"-
+"ttt.var_row_1.v.f"->"ttt.var_row_1.v.t"-
+"ttt.var_row_1.v.t"->"ttt.var_row_1.v.f"-
+weak ~"ttt.var_row_1.v.t"->"ttt.var_row_1.v.f"+
+weak ~"ttt.var_row_1.v.f"->"ttt.var_row_1.v.t"+
+= "ttt.var_row_1.v.d[0]" "ttt.var_row_1.v.f"
+= "ttt.var_row_1.v.d[1]" "ttt.var_row_1.v.t"
+= "ttt.var_row_1.v.d[0]" "ttt.var_row_1.v.f"
+= "ttt.var_row_1.v.d[1]" "ttt.var_row_1.v.t"
+"Reset"->"ttt.var_f_o.v.t"-
+"ttt.var_f_o.v.f"->"ttt.var_f_o.v.t"-
+"ttt.var_f_o.v.t"->"ttt.var_f_o.v.f"-
+weak ~"ttt.var_f_o.v.t"->"ttt.var_f_o.v.f"+
+weak ~"ttt.var_f_o.v.f"->"ttt.var_f_o.v.t"+
+= "ttt.var_f_o.v.d[0]" "ttt.var_f_o.v.f"
+= "ttt.var_f_o.v.d[1]" "ttt.var_f_o.v.t"
+= "ttt.var_f_o.v.d[0]" "ttt.var_f_o.v.f"
+= "ttt.var_f_o.v.d[1]" "ttt.var_f_o.v.t"
+"ttt.s_1.s1.a"&"ttt.s_1.s2.a"->"ttt.s_1._c"-
+~"ttt.s_1.s1.a"&~"ttt.s_1.s2.a"->"ttt.s_1._c"+
+"ttt.s_1._c"->"ttt.s_1.go.a"-
+~("ttt.s_1._c")->"ttt.s_1.go.a"+
+= "ttt.s_1.go.r" "ttt.s_1.s2.r"
+= "ttt.s_1.go.r" "ttt.s_1.s1.r"
+"Reset"->"ttt.var_c_ready_o.v.t"-
+"ttt.var_c_ready_o.v.f"->"ttt.var_c_ready_o.v.t"-
+"ttt.var_c_ready_o.v.t"->"ttt.var_c_ready_o.v.f"-
+weak ~"ttt.var_c_ready_o.v.t"->"ttt.var_c_ready_o.v.f"+
+weak ~"ttt.var_c_ready_o.v.f"->"ttt.var_c_ready_o.v.t"+
+= "ttt.var_c_ready_o.v.d[0]" "ttt.var_c_ready_o.v.f"
+= "ttt.var_c_ready_o.v.d[1]" "ttt.var_c_ready_o.v.t"
+= "ttt.var_c_ready_o.v.d[0]" "ttt.var_c_ready_o.v.f"
+= "ttt.var_c_ready_o.v.d[1]" "ttt.var_c_ready_o.v.t"
+= "ttt.c_15.a" "ttt.s_15.s1.a"
+= "ttt.c_15.r" "ttt.s_15.s1.r"
+= "ttt.c_15.a" "ttt.s_14.go.a"
+= "ttt.c_15.r" "ttt.s_14.go.r"
+= "ttt.c_15.a" "ttt.chan_H.a"
+"Reset"->"ttt.var_A_probe.v.t"-
+"ttt.var_A_probe.v.f"->"ttt.var_A_probe.v.t"-
+"ttt.var_A_probe.v.t"->"ttt.var_A_probe.v.f"-
+weak ~"ttt.var_A_probe.v.t"->"ttt.var_A_probe.v.f"+
+weak ~"ttt.var_A_probe.v.f"->"ttt.var_A_probe.v.t"+
+= "ttt.var_A_probe.v.d[0]" "ttt.var_A_probe.v.f"
+= "ttt.var_A_probe.v.d[1]" "ttt.var_A_probe.v.t"
+= "ttt.var_A_probe.v.d[0]" "ttt.var_A_probe.v.f"
+= "ttt.var_A_probe.v.d[1]" "ttt.var_A_probe.v.t"
+"Reset"->"ttt.var_i_o.v.t"-
+"ttt.var_i_o.v.f"->"ttt.var_i_o.v.t"-
+"ttt.var_i_o.v.t"->"ttt.var_i_o.v.f"-
+weak ~"ttt.var_i_o.v.t"->"ttt.var_i_o.v.f"+
+weak ~"ttt.var_i_o.v.f"->"ttt.var_i_o.v.t"+
+= "ttt.var_i_o.v.d[0]" "ttt.var_i_o.v.f"
+= "ttt.var_i_o.v.d[1]" "ttt.var_i_o.v.t"
+= "ttt.var_i_o.v.d[0]" "ttt.var_i_o.v.f"
+= "ttt.var_i_o.v.d[1]" "ttt.var_i_o.v.t"
+= "ttt.c_8.a" "ttt.s_9.go.a"
+= "ttt.c_8.r" "ttt.s_9.go.r"
+= "ttt.c_8.a" "ttt.s_7.s2.a"
+= "ttt.c_8.r" "ttt.s_7.s2.r"
+"ttt.s_6.go.r"&"ttt.s_6._goa"&"ttt.s_6.in.t"->"ttt.s_6.v.f"-
+"ttt.s_6.go.r"&"ttt.s_6._goa"&"ttt.s_6.in.f"->"ttt.s_6.v.t"-
+"ttt.s_6.go.r"&("ttt.s_6.v.t"&"ttt.s_6.in.t"|"ttt.s_6.v.f"&"ttt.s_6.in.f")->"ttt.s_6._goa"-
+~"ttt.s_6.in.t"&~"ttt.s_6.in.f"&~"ttt.s_6.go.r"->"ttt.s_6._goa"+
+"Reset"|"ttt.s_6._goa"->"ttt.s_6.go.a"-
+~("Reset"|"ttt.s_6._goa")->"ttt.s_6.go.a"+
+= "ttt.s_6.v.d[0]" "ttt.s_6.v.f"
+= "ttt.s_6.v.d[1]" "ttt.s_6.v.t"
+= "ttt.s_6.v.d[0]" "ttt.s_6.v.f"
+= "ttt.s_6.v.d[1]" "ttt.s_6.v.t"
+= "ttt.s_6.go.a" "ttt.s_6.in.a"
+= "ttt.s_6.in.d[0]" "ttt.s_6.in.f"
+= "ttt.s_6.in.d[1]" "ttt.s_6.in.t"
+= "ttt.s_6.in.d[0]" "ttt.s_6.in.f"
+= "ttt.s_6.in.d[1]" "ttt.s_6.in.t"
+= "ttt.s_6.v.f" "ttt.var_D_probe.v.f"
+= "ttt.s_6.v.t" "ttt.var_D_probe.v.t"
+= "ttt.s_6.v.d[0]" "ttt.var_D_probe.v.d[0]"
+= "ttt.s_6.v.d[1]" "ttt.var_D_probe.v.d[1]"
+= "ttt.s_6.v.d[0]" "ttt.s_6.v.f"
+= "ttt.s_6.v.d[1]" "ttt.s_6.v.t"
+"Reset"->"ttt.var_d_x.v.t"-
+"ttt.var_d_x.v.f"->"ttt.var_d_x.v.t"-
+"ttt.var_d_x.v.t"->"ttt.var_d_x.v.f"-
+weak ~"ttt.var_d_x.v.t"->"ttt.var_d_x.v.f"+
+weak ~"ttt.var_d_x.v.f"->"ttt.var_d_x.v.t"+
+= "ttt.var_d_x.v.d[0]" "ttt.var_d_x.v.f"
+= "ttt.var_d_x.v.d[1]" "ttt.var_d_x.v.t"
+= "ttt.var_d_x.v.d[0]" "ttt.var_d_x.v.f"
+= "ttt.var_d_x.v.d[1]" "ttt.var_d_x.v.t"
+"ttt.s_2.go.r"&"ttt.s_2._goa"&"ttt.s_2.in.t"->"ttt.s_2.v.f"-
+"ttt.s_2.go.r"&"ttt.s_2._goa"&"ttt.s_2.in.f"->"ttt.s_2.v.t"-
+"ttt.s_2.go.r"&("ttt.s_2.v.t"&"ttt.s_2.in.t"|"ttt.s_2.v.f"&"ttt.s_2.in.f")->"ttt.s_2._goa"-
+~"ttt.s_2.in.t"&~"ttt.s_2.in.f"&~"ttt.s_2.go.r"->"ttt.s_2._goa"+
+"Reset"|"ttt.s_2._goa"->"ttt.s_2.go.a"-
+~("Reset"|"ttt.s_2._goa")->"ttt.s_2.go.a"+
+= "ttt.s_2.v.d[0]" "ttt.s_2.v.f"
+= "ttt.s_2.v.d[1]" "ttt.s_2.v.t"
+= "ttt.s_2.v.d[0]" "ttt.s_2.v.f"
+= "ttt.s_2.v.d[1]" "ttt.s_2.v.t"
+= "ttt.s_2.go.a" "ttt.s_2.in.a"
+= "ttt.s_2.in.d[0]" "ttt.s_2.in.f"
+= "ttt.s_2.in.d[1]" "ttt.s_2.in.t"
+= "ttt.s_2.in.d[0]" "ttt.s_2.in.f"
+= "ttt.s_2.in.d[1]" "ttt.s_2.in.t"
+= "ttt.s_2.v.f" "ttt.var_B_probe.v.f"
+= "ttt.s_2.v.t" "ttt.var_B_probe.v.t"
+= "ttt.s_2.v.d[0]" "ttt.var_B_probe.v.d[0]"
+= "ttt.s_2.v.d[1]" "ttt.var_B_probe.v.d[1]"
+= "ttt.s_2.v.d[0]" "ttt.s_2.v.f"
+= "ttt.s_2.v.d[1]" "ttt.s_2.v.t"
+"ttt.s_5.s1.a"&"ttt.s_5.s2.a"->"ttt.s_5._c"-
+~"ttt.s_5.s1.a"&~"ttt.s_5.s2.a"->"ttt.s_5._c"+
+"ttt.s_5._c"->"ttt.s_5.go.a"-
+~("ttt.s_5._c")->"ttt.s_5.go.a"+
+= "ttt.s_5.go.r" "ttt.s_5.s2.r"
+= "ttt.s_5.go.r" "ttt.s_5.s1.r"
+"Reset"->"ttt.var_a_o.v.t"-
+"ttt.var_a_o.v.f"->"ttt.var_a_o.v.t"-
+"ttt.var_a_o.v.t"->"ttt.var_a_o.v.f"-
+weak ~"ttt.var_a_o.v.t"->"ttt.var_a_o.v.f"+
+weak ~"ttt.var_a_o.v.f"->"ttt.var_a_o.v.t"+
+= "ttt.var_a_o.v.d[0]" "ttt.var_a_o.v.f"
+= "ttt.var_a_o.v.d[1]" "ttt.var_a_o.v.t"
+= "ttt.var_a_o.v.d[0]" "ttt.var_a_o.v.f"
+= "ttt.var_a_o.v.d[1]" "ttt.var_a_o.v.t"
+"Reset"->"ttt.var_i_ready_o.v.t"-
+"ttt.var_i_ready_o.v.f"->"ttt.var_i_ready_o.v.t"-
+"ttt.var_i_ready_o.v.t"->"ttt.var_i_ready_o.v.f"-
+weak ~"ttt.var_i_ready_o.v.t"->"ttt.var_i_ready_o.v.f"+
+weak ~"ttt.var_i_ready_o.v.f"->"ttt.var_i_ready_o.v.t"+
+= "ttt.var_i_ready_o.v.d[0]" "ttt.var_i_ready_o.v.f"
+= "ttt.var_i_ready_o.v.d[1]" "ttt.var_i_ready_o.v.t"
+= "ttt.var_i_ready_o.v.d[0]" "ttt.var_i_ready_o.v.f"
+= "ttt.var_i_ready_o.v.d[1]" "ttt.var_i_ready_o.v.t"
+= "ttt.c_10.a" "ttt.s_11.go.a"
+= "ttt.c_10.r" "ttt.s_11.go.r"
+= "ttt.c_10.a" "ttt.s_9.s2.a"
+= "ttt.c_10.r" "ttt.s_9.s2.r"
+"ttt.na_19.x"->"ttt.na_19._inv"-
+~("ttt.na_19.x")->"ttt.na_19._inv"+
+"ttt.na_19._inv"|"ttt.na_19.y"->"ttt.na_19.out"-
+~("ttt.na_19._inv"|"ttt.na_19.y")->"ttt.na_19.out"+
+"Reset"->"ttt.var_b_ready_o.v.t"-
+"ttt.var_b_ready_o.v.f"->"ttt.var_b_ready_o.v.t"-
+"ttt.var_b_ready_o.v.t"->"ttt.var_b_ready_o.v.f"-
+weak ~"ttt.var_b_ready_o.v.t"->"ttt.var_b_ready_o.v.f"+
+weak ~"ttt.var_b_ready_o.v.f"->"ttt.var_b_ready_o.v.t"+
+= "ttt.var_b_ready_o.v.d[0]" "ttt.var_b_ready_o.v.f"
+= "ttt.var_b_ready_o.v.d[1]" "ttt.var_b_ready_o.v.t"
+= "ttt.var_b_ready_o.v.d[0]" "ttt.var_b_ready_o.v.f"
+= "ttt.var_b_ready_o.v.d[1]" "ttt.var_b_ready_o.v.t"
+"ttt.s_7.s1.a"&"ttt.s_7.s2.a"->"ttt.s_7._c"-
+~"ttt.s_7.s1.a"&~"ttt.s_7.s2.a"->"ttt.s_7._c"+
+"ttt.s_7._c"->"ttt.s_7.go.a"-
+~("ttt.s_7._c")->"ttt.s_7.go.a"+
+= "ttt.s_7.go.r" "ttt.s_7.s2.r"
+= "ttt.s_7.go.r" "ttt.s_7.s1.r"
+"ttt.s_16.go.r"&"ttt.s_16._goa"&"ttt.s_16.in.t"->"ttt.s_16.v.f"-
+"ttt.s_16.go.r"&"ttt.s_16._goa"&"ttt.s_16.in.f"->"ttt.s_16.v.t"-
+"ttt.s_16.go.r"&("ttt.s_16.v.t"&"ttt.s_16.in.t"|"ttt.s_16.v.f"&"ttt.s_16.in.f")->"ttt.s_16._goa"-
+~"ttt.s_16.in.t"&~"ttt.s_16.in.f"&~"ttt.s_16.go.r"->"ttt.s_16._goa"+
+"Reset"|"ttt.s_16._goa"->"ttt.s_16.go.a"-
+~("Reset"|"ttt.s_16._goa")->"ttt.s_16.go.a"+
+= "ttt.s_16.v.d[0]" "ttt.s_16.v.f"
+= "ttt.s_16.v.d[1]" "ttt.s_16.v.t"
+= "ttt.s_16.v.d[0]" "ttt.s_16.v.f"
+= "ttt.s_16.v.d[1]" "ttt.s_16.v.t"
+= "ttt.s_16.go.a" "ttt.s_16.in.a"
+= "ttt.s_16.in.d[0]" "ttt.s_16.in.f"
+= "ttt.s_16.in.d[1]" "ttt.s_16.in.t"
+= "ttt.s_16.in.d[0]" "ttt.s_16.in.f"
+= "ttt.s_16.in.d[1]" "ttt.s_16.in.t"
+= "ttt.s_16.v.f" "ttt.var_I_probe.v.f"
+= "ttt.s_16.v.t" "ttt.var_I_probe.v.t"
+= "ttt.s_16.v.d[0]" "ttt.var_I_probe.v.d[0]"
+= "ttt.s_16.v.d[1]" "ttt.var_I_probe.v.d[1]"
+= "ttt.s_16.v.d[0]" "ttt.s_16.v.f"
+= "ttt.s_16.v.d[1]" "ttt.s_16.v.t"
+"Reset"->"ttt.var_c.v.t"-
+"ttt.var_c.v.f"->"ttt.var_c.v.t"-
+"ttt.var_c.v.t"->"ttt.var_c.v.f"-
+weak ~"ttt.var_c.v.t"->"ttt.var_c.v.f"+
+weak ~"ttt.var_c.v.f"->"ttt.var_c.v.t"+
+= "ttt.var_c.v.d[0]" "ttt.var_c.v.f"
+= "ttt.var_c.v.d[1]" "ttt.var_c.v.t"
+= "ttt.var_c.v.d[0]" "ttt.var_c.v.f"
+= "ttt.var_c.v.d[1]" "ttt.var_c.v.t"
+"Reset"->"ttt.var_e_o.v.t"-
+"ttt.var_e_o.v.f"->"ttt.var_e_o.v.t"-
+"ttt.var_e_o.v.t"->"ttt.var_e_o.v.f"-
+weak ~"ttt.var_e_o.v.t"->"ttt.var_e_o.v.f"+
+weak ~"ttt.var_e_o.v.f"->"ttt.var_e_o.v.t"+
+= "ttt.var_e_o.v.d[0]" "ttt.var_e_o.v.f"
+= "ttt.var_e_o.v.d[1]" "ttt.var_e_o.v.t"
+= "ttt.var_e_o.v.d[0]" "ttt.var_e_o.v.f"
+= "ttt.var_e_o.v.d[1]" "ttt.var_e_o.v.t"
+"Reset"->"ttt.var_g_ready_o.v.t"-
+"ttt.var_g_ready_o.v.f"->"ttt.var_g_ready_o.v.t"-
+"ttt.var_g_ready_o.v.t"->"ttt.var_g_ready_o.v.f"-
+weak ~"ttt.var_g_ready_o.v.t"->"ttt.var_g_ready_o.v.f"+
+weak ~"ttt.var_g_ready_o.v.f"->"ttt.var_g_ready_o.v.t"+
+= "ttt.var_g_ready_o.v.d[0]" "ttt.var_g_ready_o.v.f"
+= "ttt.var_g_ready_o.v.d[1]" "ttt.var_g_ready_o.v.t"
+= "ttt.var_g_ready_o.v.d[0]" "ttt.var_g_ready_o.v.f"
+= "ttt.var_g_ready_o.v.d[1]" "ttt.var_g_ready_o.v.t"
+= "ttt.chan_E.d[0]" "ttt.chan_E.f"
+= "ttt.chan_E.d[1]" "ttt.chan_E.t"
+= "ttt.chan_E.a" "ttt.s_8.in.a"
+= "ttt.chan_E.f" "ttt.s_8.in.f"
+= "ttt.chan_E.t" "ttt.s_8.in.t"
+= "ttt.chan_E.d[0]" "ttt.s_8.in.d[0]"
+= "ttt.chan_E.d[1]" "ttt.s_8.in.d[1]"
+= "ttt.chan_E.d[0]" "ttt.chan_E.f"
+= "ttt.chan_E.d[1]" "ttt.chan_E.t"
+"Reset"->"ttt.var_x.v.t"-
+"ttt.var_x.v.f"->"ttt.var_x.v.t"-
+"ttt.var_x.v.t"->"ttt.var_x.v.f"-
+weak ~"ttt.var_x.v.t"->"ttt.var_x.v.f"+
+weak ~"ttt.var_x.v.f"->"ttt.var_x.v.t"+
+= "ttt.var_x.v.d[0]" "ttt.var_x.v.f"
+= "ttt.var_x.v.d[1]" "ttt.var_x.v.t"
+= "ttt.var_x.v.d[0]" "ttt.var_x.v.f"
+= "ttt.var_x.v.d[1]" "ttt.var_x.v.t"
+"ttt.s_10.go.r"&"ttt.s_10._goa"&"ttt.s_10.in.t"->"ttt.s_10.v.f"-
+"ttt.s_10.go.r"&"ttt.s_10._goa"&"ttt.s_10.in.f"->"ttt.s_10.v.t"-
+"ttt.s_10.go.r"&("ttt.s_10.v.t"&"ttt.s_10.in.t"|"ttt.s_10.v.f"&"ttt.s_10.in.f")->"ttt.s_10._goa"-
+~"ttt.s_10.in.t"&~"ttt.s_10.in.f"&~"ttt.s_10.go.r"->"ttt.s_10._goa"+
+"Reset"|"ttt.s_10._goa"->"ttt.s_10.go.a"-
+~("Reset"|"ttt.s_10._goa")->"ttt.s_10.go.a"+
+= "ttt.s_10.v.d[0]" "ttt.s_10.v.f"
+= "ttt.s_10.v.d[1]" "ttt.s_10.v.t"
+= "ttt.s_10.v.d[0]" "ttt.s_10.v.f"
+= "ttt.s_10.v.d[1]" "ttt.s_10.v.t"
+= "ttt.s_10.go.a" "ttt.s_10.in.a"
+= "ttt.s_10.in.d[0]" "ttt.s_10.in.f"
+= "ttt.s_10.in.d[1]" "ttt.s_10.in.t"
+= "ttt.s_10.in.d[0]" "ttt.s_10.in.f"
+= "ttt.s_10.in.d[1]" "ttt.s_10.in.t"
+= "ttt.s_10.v.f" "ttt.var_F_probe.v.f"
+= "ttt.s_10.v.t" "ttt.var_F_probe.v.t"
+= "ttt.s_10.v.d[0]" "ttt.var_F_probe.v.d[0]"
+= "ttt.s_10.v.d[1]" "ttt.var_F_probe.v.d[1]"
+= "ttt.s_10.v.d[0]" "ttt.s_10.v.f"
+= "ttt.s_10.v.d[1]" "ttt.s_10.v.t"
+"Reset"->"ttt.var_h_o.v.t"-
+"ttt.var_h_o.v.f"->"ttt.var_h_o.v.t"-
+"ttt.var_h_o.v.t"->"ttt.var_h_o.v.f"-
+weak ~"ttt.var_h_o.v.t"->"ttt.var_h_o.v.f"+
+weak ~"ttt.var_h_o.v.f"->"ttt.var_h_o.v.t"+
+= "ttt.var_h_o.v.d[0]" "ttt.var_h_o.v.f"
+= "ttt.var_h_o.v.d[1]" "ttt.var_h_o.v.t"
+= "ttt.var_h_o.v.d[0]" "ttt.var_h_o.v.f"
+= "ttt.var_h_o.v.d[1]" "ttt.var_h_o.v.t"
+"Reset"->"ttt.var_e.v.t"-
+"ttt.var_e.v.f"->"ttt.var_e.v.t"-
+"ttt.var_e.v.t"->"ttt.var_e.v.f"-
+weak ~"ttt.var_e.v.t"->"ttt.var_e.v.f"+
+weak ~"ttt.var_e.v.f"->"ttt.var_e.v.t"+
+= "ttt.var_e.v.d[0]" "ttt.var_e.v.f"
+= "ttt.var_e.v.d[1]" "ttt.var_e.v.t"
+= "ttt.var_e.v.d[0]" "ttt.var_e.v.f"
+= "ttt.var_e.v.d[1]" "ttt.var_e.v.t"
+"Reset"->"ttt.var_g_x.v.t"-
+"ttt.var_g_x.v.f"->"ttt.var_g_x.v.t"-
+"ttt.var_g_x.v.t"->"ttt.var_g_x.v.f"-
+weak ~"ttt.var_g_x.v.t"->"ttt.var_g_x.v.f"+
+weak ~"ttt.var_g_x.v.f"->"ttt.var_g_x.v.t"+
+= "ttt.var_g_x.v.d[0]" "ttt.var_g_x.v.f"
+= "ttt.var_g_x.v.d[1]" "ttt.var_g_x.v.t"
+= "ttt.var_g_x.v.d[0]" "ttt.var_g_x.v.f"
+= "ttt.var_g_x.v.d[1]" "ttt.var_g_x.v.t"
+"Reset"->"ttt.var_full.v.t"-
+"ttt.var_full.v.f"->"ttt.var_full.v.t"-
+"ttt.var_full.v.t"->"ttt.var_full.v.f"-
+weak ~"ttt.var_full.v.t"->"ttt.var_full.v.f"+
+weak ~"ttt.var_full.v.f"->"ttt.var_full.v.t"+
+= "ttt.var_full.v.d[0]" "ttt.var_full.v.f"
+= "ttt.var_full.v.d[1]" "ttt.var_full.v.t"
+= "ttt.var_full.v.d[0]" "ttt.var_full.v.f"
+= "ttt.var_full.v.d[1]" "ttt.var_full.v.t"
+"Reset"->"ttt.var_o_win.v.t"-
+"ttt.var_o_win.v.f"->"ttt.var_o_win.v.t"-
+"ttt.var_o_win.v.t"->"ttt.var_o_win.v.f"-
+weak ~"ttt.var_o_win.v.t"->"ttt.var_o_win.v.f"+
+weak ~"ttt.var_o_win.v.f"->"ttt.var_o_win.v.t"+
+= "ttt.var_o_win.v.d[0]" "ttt.var_o_win.v.f"
+= "ttt.var_o_win.v.d[1]" "ttt.var_o_win.v.t"
+= "ttt.var_o_win.v.d[0]" "ttt.var_o_win.v.f"
+= "ttt.var_o_win.v.d[1]" "ttt.var_o_win.v.t"
+"Reset"->"ttt.var_o6_win.v.t"-
+"ttt.var_o6_win.v.f"->"ttt.var_o6_win.v.t"-
+"ttt.var_o6_win.v.t"->"ttt.var_o6_win.v.f"-
+weak ~"ttt.var_o6_win.v.t"->"ttt.var_o6_win.v.f"+
+weak ~"ttt.var_o6_win.v.f"->"ttt.var_o6_win.v.t"+
+= "ttt.var_o6_win.v.d[0]" "ttt.var_o6_win.v.f"
+= "ttt.var_o6_win.v.d[1]" "ttt.var_o6_win.v.t"
+= "ttt.var_o6_win.v.d[0]" "ttt.var_o6_win.v.f"
+= "ttt.var_o6_win.v.d[1]" "ttt.var_o6_win.v.t"
+"Reset"->"ttt.var_g_reset.v.t"-
+"ttt.var_g_reset.v.f"->"ttt.var_g_reset.v.t"-
+"ttt.var_g_reset.v.t"->"ttt.var_g_reset.v.f"-
+weak ~"ttt.var_g_reset.v.t"->"ttt.var_g_reset.v.f"+
+weak ~"ttt.var_g_reset.v.f"->"ttt.var_g_reset.v.t"+
+= "ttt.var_g_reset.v.d[0]" "ttt.var_g_reset.v.f"
+= "ttt.var_g_reset.v.d[1]" "ttt.var_g_reset.v.t"
+= "ttt.var_g_reset.v.d[0]" "ttt.var_g_reset.v.f"
+= "ttt.var_g_reset.v.d[1]" "ttt.var_g_reset.v.t"
+"Reset"->"ttt.var_C_probe.v.t"-
+"ttt.var_C_probe.v.f"->"ttt.var_C_probe.v.t"-
+"ttt.var_C_probe.v.t"->"ttt.var_C_probe.v.f"-
+weak ~"ttt.var_C_probe.v.t"->"ttt.var_C_probe.v.f"+
+weak ~"ttt.var_C_probe.v.f"->"ttt.var_C_probe.v.t"+
+= "ttt.var_C_probe.v.d[0]" "ttt.var_C_probe.v.f"
+= "ttt.var_C_probe.v.d[1]" "ttt.var_C_probe.v.t"
+= "ttt.var_C_probe.v.d[0]" "ttt.var_C_probe.v.f"
+= "ttt.var_C_probe.v.d[1]" "ttt.var_C_probe.v.t"
+"Reset"->"ttt.var_o_win_1.v.t"-
+"ttt.var_o_win_1.v.f"->"ttt.var_o_win_1.v.t"-
+"ttt.var_o_win_1.v.t"->"ttt.var_o_win_1.v.f"-
+weak ~"ttt.var_o_win_1.v.t"->"ttt.var_o_win_1.v.f"+
+weak ~"ttt.var_o_win_1.v.f"->"ttt.var_o_win_1.v.t"+
+= "ttt.var_o_win_1.v.d[0]" "ttt.var_o_win_1.v.f"
+= "ttt.var_o_win_1.v.d[1]" "ttt.var_o_win_1.v.t"
+= "ttt.var_o_win_1.v.d[0]" "ttt.var_o_win_1.v.f"
+= "ttt.var_o_win_1.v.d[1]" "ttt.var_o_win_1.v.t"
+"Reset"->"ttt.var_x6_win.v.t"-
+"ttt.var_x6_win.v.f"->"ttt.var_x6_win.v.t"-
+"ttt.var_x6_win.v.t"->"ttt.var_x6_win.v.f"-
+weak ~"ttt.var_x6_win.v.t"->"ttt.var_x6_win.v.f"+
+weak ~"ttt.var_x6_win.v.f"->"ttt.var_x6_win.v.t"+
+= "ttt.var_x6_win.v.d[0]" "ttt.var_x6_win.v.f"
+= "ttt.var_x6_win.v.d[1]" "ttt.var_x6_win.v.t"
+= "ttt.var_x6_win.v.d[0]" "ttt.var_x6_win.v.f"
+= "ttt.var_x6_win.v.d[1]" "ttt.var_x6_win.v.t"
+= "ttt.c_2.a" "ttt.s_3.go.a"
+= "ttt.c_2.r" "ttt.s_3.go.r"
+= "ttt.c_2.a" "ttt.s_1.s2.a"
+= "ttt.c_2.r" "ttt.s_1.s2.r"
+= "ttt.c_5.a" "ttt.s_5.s1.a"
+= "ttt.c_5.r" "ttt.s_5.s1.r"
+= "ttt.c_5.a" "ttt.s_4.go.a"
+= "ttt.c_5.r" "ttt.s_4.go.r"
+= "ttt.c_5.a" "ttt.chan_C.a"
+"ttt.s_4.go.r"&"ttt.s_4._goa"&"ttt.s_4.in.t"->"ttt.s_4.v.f"-
+"ttt.s_4.go.r"&"ttt.s_4._goa"&"ttt.s_4.in.f"->"ttt.s_4.v.t"-
+"ttt.s_4.go.r"&("ttt.s_4.v.t"&"ttt.s_4.in.t"|"ttt.s_4.v.f"&"ttt.s_4.in.f")->"ttt.s_4._goa"-
+~"ttt.s_4.in.t"&~"ttt.s_4.in.f"&~"ttt.s_4.go.r"->"ttt.s_4._goa"+
+"Reset"|"ttt.s_4._goa"->"ttt.s_4.go.a"-
+~("Reset"|"ttt.s_4._goa")->"ttt.s_4.go.a"+
+= "ttt.s_4.v.d[0]" "ttt.s_4.v.f"
+= "ttt.s_4.v.d[1]" "ttt.s_4.v.t"
+= "ttt.s_4.v.d[0]" "ttt.s_4.v.f"
+= "ttt.s_4.v.d[1]" "ttt.s_4.v.t"
+= "ttt.s_4.go.a" "ttt.s_4.in.a"
+= "ttt.s_4.in.d[0]" "ttt.s_4.in.f"
+= "ttt.s_4.in.d[1]" "ttt.s_4.in.t"
+= "ttt.s_4.in.d[0]" "ttt.s_4.in.f"
+= "ttt.s_4.in.d[1]" "ttt.s_4.in.t"
+= "ttt.s_4.v.f" "ttt.var_C_probe.v.f"
+= "ttt.s_4.v.t" "ttt.var_C_probe.v.t"
+= "ttt.s_4.v.d[0]" "ttt.var_C_probe.v.d[0]"
+= "ttt.s_4.v.d[1]" "ttt.var_C_probe.v.d[1]"
+= "ttt.s_4.v.d[0]" "ttt.s_4.v.f"
+= "ttt.s_4.v.d[1]" "ttt.s_4.v.t"
+= "ttt.c_14.a" "ttt.s_15.go.a"
+= "ttt.c_14.r" "ttt.s_15.go.r"
+= "ttt.c_14.a" "ttt.s_13.s2.a"
+= "ttt.c_14.r" "ttt.s_13.s2.r"
+= "ttt.chan_X_WIN.d[0]" "ttt.chan_X_WIN.f"
+= "ttt.chan_X_WIN.d[1]" "ttt.chan_X_WIN.t"
+"Reset"->"ttt.var_c_reset.v.t"-
+"ttt.var_c_reset.v.f"->"ttt.var_c_reset.v.t"-
+"ttt.var_c_reset.v.t"->"ttt.var_c_reset.v.f"-
+weak ~"ttt.var_c_reset.v.t"->"ttt.var_c_reset.v.f"+
+weak ~"ttt.var_c_reset.v.f"->"ttt.var_c_reset.v.t"+
+= "ttt.var_c_reset.v.d[0]" "ttt.var_c_reset.v.f"
+= "ttt.var_c_reset.v.d[1]" "ttt.var_c_reset.v.t"
+= "ttt.var_c_reset.v.d[0]" "ttt.var_c_reset.v.f"
+= "ttt.var_c_reset.v.d[1]" "ttt.var_c_reset.v.t"
+"Reset"->"ttt.var_c_ready_x.v.t"-
+"ttt.var_c_ready_x.v.f"->"ttt.var_c_ready_x.v.t"-
+"ttt.var_c_ready_x.v.t"->"ttt.var_c_ready_x.v.f"-
+weak ~"ttt.var_c_ready_x.v.t"->"ttt.var_c_ready_x.v.f"+
+weak ~"ttt.var_c_ready_x.v.f"->"ttt.var_c_ready_x.v.t"+
+= "ttt.var_c_ready_x.v.d[0]" "ttt.var_c_ready_x.v.f"
+= "ttt.var_c_ready_x.v.d[1]" "ttt.var_c_ready_x.v.t"
+= "ttt.var_c_ready_x.v.d[0]" "ttt.var_c_ready_x.v.f"
+= "ttt.var_c_ready_x.v.d[1]" "ttt.var_c_ready_x.v.t"
+= "ttt.chan_RESET.d[0]" "ttt.chan_RESET.f"
+= "ttt.chan_RESET.d[1]" "ttt.chan_RESET.t"
+= "ttt.chan_RESET.a" "ttt.s_18.in.a"
+= "ttt.chan_RESET.f" "ttt.s_18.in.f"
+= "ttt.chan_RESET.t" "ttt.s_18.in.t"
+= "ttt.chan_RESET.d[0]" "ttt.s_18.in.d[0]"
+= "ttt.chan_RESET.d[1]" "ttt.s_18.in.d[1]"
+= "ttt.chan_RESET.d[0]" "ttt.chan_RESET.f"
+= "ttt.chan_RESET.d[1]" "ttt.chan_RESET.t"
+"Reset"->"ttt.var_h_x.v.t"-
+"ttt.var_h_x.v.f"->"ttt.var_h_x.v.t"-
+"ttt.var_h_x.v.t"->"ttt.var_h_x.v.f"-
+weak ~"ttt.var_h_x.v.t"->"ttt.var_h_x.v.f"+
+weak ~"ttt.var_h_x.v.f"->"ttt.var_h_x.v.t"+
+= "ttt.var_h_x.v.d[0]" "ttt.var_h_x.v.f"
+= "ttt.var_h_x.v.d[1]" "ttt.var_h_x.v.t"
+= "ttt.var_h_x.v.d[0]" "ttt.var_h_x.v.f"
+= "ttt.var_h_x.v.d[1]" "ttt.var_h_x.v.t"
+= "ttt.c_4.a" "ttt.s_5.go.a"
+= "ttt.c_4.r" "ttt.s_5.go.r"
+= "ttt.c_4.a" "ttt.s_3.s2.a"
+= "ttt.c_4.r" "ttt.s_3.s2.r"
+= "ttt.c_18.a" "ttt.s_17.s2.a"
+= "ttt.c_18.r" "ttt.s_17.s2.r"
+= "ttt.c_18.a" "ttt.s_18.go.a"
+= "ttt.c_18.r" "ttt.s_18.go.r"
+= "ttt.c_18.a" "ttt.chan_RESET.a"
+"Reset"->"ttt.var_b_reset.v.t"-
+"ttt.var_b_reset.v.f"->"ttt.var_b_reset.v.t"-
+"ttt.var_b_reset.v.t"->"ttt.var_b_reset.v.f"-
+weak ~"ttt.var_b_reset.v.t"->"ttt.var_b_reset.v.f"+
+weak ~"ttt.var_b_reset.v.f"->"ttt.var_b_reset.v.t"+
+= "ttt.var_b_reset.v.d[0]" "ttt.var_b_reset.v.f"
+= "ttt.var_b_reset.v.d[1]" "ttt.var_b_reset.v.t"
+= "ttt.var_b_reset.v.d[0]" "ttt.var_b_reset.v.f"
+= "ttt.var_b_reset.v.d[1]" "ttt.var_b_reset.v.t"
+= "GND" "ttt.gc_0.f"
+"Reset"->"ttt.var_w.v.t"-
+"ttt.var_w.v.f"->"ttt.var_w.v.t"-
+"ttt.var_w.v.t"->"ttt.var_w.v.f"-
+weak ~"ttt.var_w.v.t"->"ttt.var_w.v.f"+
+weak ~"ttt.var_w.v.f"->"ttt.var_w.v.t"+
+= "ttt.var_w.v.d[0]" "ttt.var_w.v.f"
+= "ttt.var_w.v.d[1]" "ttt.var_w.v.t"
+= "ttt.var_w.v.d[0]" "ttt.var_w.v.f"
+= "ttt.var_w.v.d[1]" "ttt.var_w.v.t"
+"Reset"->"ttt.var_turn.v.t"-
+"ttt.var_turn.v.f"->"ttt.var_turn.v.t"-
+"ttt.var_turn.v.t"->"ttt.var_turn.v.f"-
+weak ~"ttt.var_turn.v.t"->"ttt.var_turn.v.f"+
+weak ~"ttt.var_turn.v.f"->"ttt.var_turn.v.t"+
+= "ttt.var_turn.v.d[0]" "ttt.var_turn.v.f"
+= "ttt.var_turn.v.d[1]" "ttt.var_turn.v.t"
+= "ttt.var_turn.v.d[0]" "ttt.var_turn.v.f"
+= "ttt.var_turn.v.d[1]" "ttt.var_turn.v.t"
+"Reset"->"ttt.var_e_ready_x.v.t"-
+"ttt.var_e_ready_x.v.f"->"ttt.var_e_ready_x.v.t"-
+"ttt.var_e_ready_x.v.t"->"ttt.var_e_ready_x.v.f"-
+weak ~"ttt.var_e_ready_x.v.t"->"ttt.var_e_ready_x.v.f"+
+weak ~"ttt.var_e_ready_x.v.f"->"ttt.var_e_ready_x.v.t"+
+= "ttt.var_e_ready_x.v.d[0]" "ttt.var_e_ready_x.v.f"
+= "ttt.var_e_ready_x.v.d[1]" "ttt.var_e_ready_x.v.t"
+= "ttt.var_e_ready_x.v.d[0]" "ttt.var_e_ready_x.v.f"
+= "ttt.var_e_ready_x.v.d[1]" "ttt.var_e_ready_x.v.t"
+"Reset"->"ttt.var_h_ready_x.v.t"-
+"ttt.var_h_ready_x.v.f"->"ttt.var_h_ready_x.v.t"-
+"ttt.var_h_ready_x.v.t"->"ttt.var_h_ready_x.v.f"-
+weak ~"ttt.var_h_ready_x.v.t"->"ttt.var_h_ready_x.v.f"+
+weak ~"ttt.var_h_ready_x.v.f"->"ttt.var_h_ready_x.v.t"+
+= "ttt.var_h_ready_x.v.d[0]" "ttt.var_h_ready_x.v.f"
+= "ttt.var_h_ready_x.v.d[1]" "ttt.var_h_ready_x.v.t"
+= "ttt.var_h_ready_x.v.d[0]" "ttt.var_h_ready_x.v.f"
+= "ttt.var_h_ready_x.v.d[1]" "ttt.var_h_ready_x.v.t"
+"ttt.s_17.s1.a"&"ttt.s_17.s2.a"->"ttt.s_17._c"-
+~"ttt.s_17.s1.a"&~"ttt.s_17.s2.a"->"ttt.s_17._c"+
+"ttt.s_17._c"->"ttt.s_17.go.a"-
+~("ttt.s_17._c")->"ttt.s_17.go.a"+
+= "ttt.s_17.go.r" "ttt.s_17.s2.r"
+= "ttt.s_17.go.r" "ttt.s_17.s1.r"
+"Reset"->"ttt.var_b.v.t"-
+"ttt.var_b.v.f"->"ttt.var_b.v.t"-
+"ttt.var_b.v.t"->"ttt.var_b.v.f"-
+weak ~"ttt.var_b.v.t"->"ttt.var_b.v.f"+
+weak ~"ttt.var_b.v.f"->"ttt.var_b.v.t"+
+= "ttt.var_b.v.d[0]" "ttt.var_b.v.f"
+= "ttt.var_b.v.d[1]" "ttt.var_b.v.t"
+= "ttt.var_b.v.d[0]" "ttt.var_b.v.f"
+= "ttt.var_b.v.d[1]" "ttt.var_b.v.t"
+"ttt.s_3.s1.a"&"ttt.s_3.s2.a"->"ttt.s_3._c"-
+~"ttt.s_3.s1.a"&~"ttt.s_3.s2.a"->"ttt.s_3._c"+
+"ttt.s_3._c"->"ttt.s_3.go.a"-
+~("ttt.s_3._c")->"ttt.s_3.go.a"+
+= "ttt.s_3.go.r" "ttt.s_3.s2.r"
+= "ttt.s_3.go.r" "ttt.s_3.s1.r"
+= "ttt.c_9.a" "ttt.s_9.s1.a"
+= "ttt.c_9.r" "ttt.s_9.s1.r"
+= "ttt.c_9.a" "ttt.s_8.go.a"
+= "ttt.c_9.r" "ttt.s_8.go.r"
+= "ttt.c_9.a" "ttt.chan_E.a"
+"Reset"->"ttt.var_i_x.v.t"-
+"ttt.var_i_x.v.f"->"ttt.var_i_x.v.t"-
+"ttt.var_i_x.v.t"->"ttt.var_i_x.v.f"-
+weak ~"ttt.var_i_x.v.t"->"ttt.var_i_x.v.f"+
+weak ~"ttt.var_i_x.v.f"->"ttt.var_i_x.v.t"+
+= "ttt.var_i_x.v.d[0]" "ttt.var_i_x.v.f"
+= "ttt.var_i_x.v.d[1]" "ttt.var_i_x.v.t"
+= "ttt.var_i_x.v.d[0]" "ttt.var_i_x.v.f"
+= "ttt.var_i_x.v.d[1]" "ttt.var_i_x.v.t"
+"Reset"->"ttt.var_b_ready_x.v.t"-
+"ttt.var_b_ready_x.v.f"->"ttt.var_b_ready_x.v.t"-
+"ttt.var_b_ready_x.v.t"->"ttt.var_b_ready_x.v.f"-
+weak ~"ttt.var_b_ready_x.v.t"->"ttt.var_b_ready_x.v.f"+
+weak ~"ttt.var_b_ready_x.v.f"->"ttt.var_b_ready_x.v.t"+
+= "ttt.var_b_ready_x.v.d[0]" "ttt.var_b_ready_x.v.f"
+= "ttt.var_b_ready_x.v.d[1]" "ttt.var_b_ready_x.v.t"
+= "ttt.var_b_ready_x.v.d[0]" "ttt.var_b_ready_x.v.f"
+= "ttt.var_b_ready_x.v.d[1]" "ttt.var_b_ready_x.v.t"
+"Reset"->"ttt.var_o8_win.v.t"-
+"ttt.var_o8_win.v.f"->"ttt.var_o8_win.v.t"-
+"ttt.var_o8_win.v.t"->"ttt.var_o8_win.v.f"-
+weak ~"ttt.var_o8_win.v.t"->"ttt.var_o8_win.v.f"+
+weak ~"ttt.var_o8_win.v.f"->"ttt.var_o8_win.v.t"+
+= "ttt.var_o8_win.v.d[0]" "ttt.var_o8_win.v.f"
+= "ttt.var_o8_win.v.d[1]" "ttt.var_o8_win.v.t"
+= "ttt.var_o8_win.v.d[0]" "ttt.var_o8_win.v.f"
+= "ttt.var_o8_win.v.d[1]" "ttt.var_o8_win.v.t"
+= "ttt.chan_A.d[0]" "ttt.chan_A.f"
+= "ttt.chan_A.d[1]" "ttt.chan_A.t"
+= "ttt.chan_A.a" "ttt.s_0.in.a"
+= "ttt.chan_A.f" "ttt.s_0.in.f"
+= "ttt.chan_A.t" "ttt.s_0.in.t"
+= "ttt.chan_A.d[0]" "ttt.s_0.in.d[0]"
+= "ttt.chan_A.d[1]" "ttt.s_0.in.d[1]"
+= "ttt.chan_A.d[0]" "ttt.chan_A.f"
+= "ttt.chan_A.d[1]" "ttt.chan_A.t"
+"Reset"->"ttt.var_x2_win.v.t"-
+"ttt.var_x2_win.v.f"->"ttt.var_x2_win.v.t"-
+"ttt.var_x2_win.v.t"->"ttt.var_x2_win.v.f"-
+weak ~"ttt.var_x2_win.v.t"->"ttt.var_x2_win.v.f"+
+weak ~"ttt.var_x2_win.v.f"->"ttt.var_x2_win.v.t"+
+= "ttt.var_x2_win.v.d[0]" "ttt.var_x2_win.v.f"
+= "ttt.var_x2_win.v.d[1]" "ttt.var_x2_win.v.t"
+= "ttt.var_x2_win.v.d[0]" "ttt.var_x2_win.v.f"
+= "ttt.var_x2_win.v.d[1]" "ttt.var_x2_win.v.t"
+"Reset"->"ttt.var_o1_win.v.t"-
+"ttt.var_o1_win.v.f"->"ttt.var_o1_win.v.t"-
+"ttt.var_o1_win.v.t"->"ttt.var_o1_win.v.f"-
+weak ~"ttt.var_o1_win.v.t"->"ttt.var_o1_win.v.f"+
+weak ~"ttt.var_o1_win.v.f"->"ttt.var_o1_win.v.t"+
+= "ttt.var_o1_win.v.d[0]" "ttt.var_o1_win.v.f"
+= "ttt.var_o1_win.v.d[1]" "ttt.var_o1_win.v.t"
+= "ttt.var_o1_win.v.d[0]" "ttt.var_o1_win.v.f"
+= "ttt.var_o1_win.v.d[1]" "ttt.var_o1_win.v.t"
+"Reset"->"ttt.var_D_probe.v.t"-
+"ttt.var_D_probe.v.f"->"ttt.var_D_probe.v.t"-
+"ttt.var_D_probe.v.t"->"ttt.var_D_probe.v.f"-
+weak ~"ttt.var_D_probe.v.t"->"ttt.var_D_probe.v.f"+
+weak ~"ttt.var_D_probe.v.f"->"ttt.var_D_probe.v.t"+
+= "ttt.var_D_probe.v.d[0]" "ttt.var_D_probe.v.f"
+= "ttt.var_D_probe.v.d[1]" "ttt.var_D_probe.v.t"
+= "ttt.var_D_probe.v.d[0]" "ttt.var_D_probe.v.f"
+= "ttt.var_D_probe.v.d[1]" "ttt.var_D_probe.v.t"
+"Reset"->"ttt.var_e_x.v.t"-
+"ttt.var_e_x.v.f"->"ttt.var_e_x.v.t"-
+"ttt.var_e_x.v.t"->"ttt.var_e_x.v.f"-
+weak ~"ttt.var_e_x.v.t"->"ttt.var_e_x.v.f"+
+weak ~"ttt.var_e_x.v.f"->"ttt.var_e_x.v.t"+
+= "ttt.var_e_x.v.d[0]" "ttt.var_e_x.v.f"
+= "ttt.var_e_x.v.d[1]" "ttt.var_e_x.v.t"
+= "ttt.var_e_x.v.d[0]" "ttt.var_e_x.v.f"
+= "ttt.var_e_x.v.d[1]" "ttt.var_e_x.v.t"
+"ttt.s_8.go.r"&"ttt.s_8._goa"&"ttt.s_8.in.t"->"ttt.s_8.v.f"-
+"ttt.s_8.go.r"&"ttt.s_8._goa"&"ttt.s_8.in.f"->"ttt.s_8.v.t"-
+"ttt.s_8.go.r"&("ttt.s_8.v.t"&"ttt.s_8.in.t"|"ttt.s_8.v.f"&"ttt.s_8.in.f")->"ttt.s_8._goa"-
+~"ttt.s_8.in.t"&~"ttt.s_8.in.f"&~"ttt.s_8.go.r"->"ttt.s_8._goa"+
+"Reset"|"ttt.s_8._goa"->"ttt.s_8.go.a"-
+~("Reset"|"ttt.s_8._goa")->"ttt.s_8.go.a"+
+= "ttt.s_8.v.d[0]" "ttt.s_8.v.f"
+= "ttt.s_8.v.d[1]" "ttt.s_8.v.t"
+= "ttt.s_8.v.d[0]" "ttt.s_8.v.f"
+= "ttt.s_8.v.d[1]" "ttt.s_8.v.t"
+= "ttt.s_8.go.a" "ttt.s_8.in.a"
+= "ttt.s_8.in.d[0]" "ttt.s_8.in.f"
+= "ttt.s_8.in.d[1]" "ttt.s_8.in.t"
+= "ttt.s_8.in.d[0]" "ttt.s_8.in.f"
+= "ttt.s_8.in.d[1]" "ttt.s_8.in.t"
+= "ttt.s_8.v.f" "ttt.var_E_probe.v.f"
+= "ttt.s_8.v.t" "ttt.var_E_probe.v.t"
+= "ttt.s_8.v.d[0]" "ttt.var_E_probe.v.d[0]"
+= "ttt.s_8.v.d[1]" "ttt.var_E_probe.v.d[1]"
+= "ttt.s_8.v.d[0]" "ttt.s_8.v.f"
+= "ttt.s_8.v.d[1]" "ttt.s_8.v.t"
+"ttt.s_12.go.r"&"ttt.s_12._goa"&"ttt.s_12.in.t"->"ttt.s_12.v.f"-
+"ttt.s_12.go.r"&"ttt.s_12._goa"&"ttt.s_12.in.f"->"ttt.s_12.v.t"-
+"ttt.s_12.go.r"&("ttt.s_12.v.t"&"ttt.s_12.in.t"|"ttt.s_12.v.f"&"ttt.s_12.in.f")->"ttt.s_12._goa"-
+~"ttt.s_12.in.t"&~"ttt.s_12.in.f"&~"ttt.s_12.go.r"->"ttt.s_12._goa"+
+"Reset"|"ttt.s_12._goa"->"ttt.s_12.go.a"-
+~("Reset"|"ttt.s_12._goa")->"ttt.s_12.go.a"+
+= "ttt.s_12.v.d[0]" "ttt.s_12.v.f"
+= "ttt.s_12.v.d[1]" "ttt.s_12.v.t"
+= "ttt.s_12.v.d[0]" "ttt.s_12.v.f"
+= "ttt.s_12.v.d[1]" "ttt.s_12.v.t"
+= "ttt.s_12.go.a" "ttt.s_12.in.a"
+= "ttt.s_12.in.d[0]" "ttt.s_12.in.f"
+= "ttt.s_12.in.d[1]" "ttt.s_12.in.t"
+= "ttt.s_12.in.d[0]" "ttt.s_12.in.f"
+= "ttt.s_12.in.d[1]" "ttt.s_12.in.t"
+= "ttt.s_12.v.f" "ttt.var_G_probe.v.f"
+= "ttt.s_12.v.t" "ttt.var_G_probe.v.t"
+= "ttt.s_12.v.d[0]" "ttt.var_G_probe.v.d[0]"
+= "ttt.s_12.v.d[1]" "ttt.var_G_probe.v.d[1]"
+= "ttt.s_12.v.d[0]" "ttt.s_12.v.f"
+= "ttt.s_12.v.d[1]" "ttt.s_12.v.t"
+"Reset"->"ttt.var_g.v.t"-
+"ttt.var_g.v.f"->"ttt.var_g.v.t"-
+"ttt.var_g.v.t"->"ttt.var_g.v.f"-
+weak ~"ttt.var_g.v.t"->"ttt.var_g.v.f"+
+weak ~"ttt.var_g.v.f"->"ttt.var_g.v.t"+
+= "ttt.var_g.v.d[0]" "ttt.var_g.v.f"
+= "ttt.var_g.v.d[1]" "ttt.var_g.v.t"
+= "ttt.var_g.v.d[0]" "ttt.var_g.v.f"
+= "ttt.var_g.v.d[1]" "ttt.var_g.v.t"
+"Reset"->"ttt.var_a_reset.v.t"-
+"ttt.var_a_reset.v.f"->"ttt.var_a_reset.v.t"-
+"ttt.var_a_reset.v.t"->"ttt.var_a_reset.v.f"-
+weak ~"ttt.var_a_reset.v.t"->"ttt.var_a_reset.v.f"+
+weak ~"ttt.var_a_reset.v.f"->"ttt.var_a_reset.v.t"+
+= "ttt.var_a_reset.v.d[0]" "ttt.var_a_reset.v.f"
+= "ttt.var_a_reset.v.d[1]" "ttt.var_a_reset.v.t"
+= "ttt.var_a_reset.v.d[0]" "ttt.var_a_reset.v.f"
+= "ttt.var_a_reset.v.d[1]" "ttt.var_a_reset.v.t"
+"Reset"->"ttt.var_H_probe.v.t"-
+"ttt.var_H_probe.v.f"->"ttt.var_H_probe.v.t"-
+"ttt.var_H_probe.v.t"->"ttt.var_H_probe.v.f"-
+weak ~"ttt.var_H_probe.v.t"->"ttt.var_H_probe.v.f"+
+weak ~"ttt.var_H_probe.v.f"->"ttt.var_H_probe.v.t"+
+= "ttt.var_H_probe.v.d[0]" "ttt.var_H_probe.v.f"
+= "ttt.var_H_probe.v.d[1]" "ttt.var_H_probe.v.t"
+= "ttt.var_H_probe.v.d[0]" "ttt.var_H_probe.v.f"
+= "ttt.var_H_probe.v.d[1]" "ttt.var_H_probe.v.t"
+"Reset"->"ttt.var_f_ready_x.v.t"-
+"ttt.var_f_ready_x.v.f"->"ttt.var_f_ready_x.v.t"-
+"ttt.var_f_ready_x.v.t"->"ttt.var_f_ready_x.v.f"-
+weak ~"ttt.var_f_ready_x.v.t"->"ttt.var_f_ready_x.v.f"+
+weak ~"ttt.var_f_ready_x.v.f"->"ttt.var_f_ready_x.v.t"+
+= "ttt.var_f_ready_x.v.d[0]" "ttt.var_f_ready_x.v.f"
+= "ttt.var_f_ready_x.v.d[1]" "ttt.var_f_ready_x.v.t"
+= "ttt.var_f_ready_x.v.d[0]" "ttt.var_f_ready_x.v.f"
+= "ttt.var_f_ready_x.v.d[1]" "ttt.var_f_ready_x.v.t"
+"ttt.s_0.go.r"&"ttt.s_0._goa"&"ttt.s_0.in.t"->"ttt.s_0.v.f"-
+"ttt.s_0.go.r"&"ttt.s_0._goa"&"ttt.s_0.in.f"->"ttt.s_0.v.t"-
+"ttt.s_0.go.r"&("ttt.s_0.v.t"&"ttt.s_0.in.t"|"ttt.s_0.v.f"&"ttt.s_0.in.f")->"ttt.s_0._goa"-
+~"ttt.s_0.in.t"&~"ttt.s_0.in.f"&~"ttt.s_0.go.r"->"ttt.s_0._goa"+
+"Reset"|"ttt.s_0._goa"->"ttt.s_0.go.a"-
+~("Reset"|"ttt.s_0._goa")->"ttt.s_0.go.a"+
+= "ttt.s_0.v.d[0]" "ttt.s_0.v.f"
+= "ttt.s_0.v.d[1]" "ttt.s_0.v.t"
+= "ttt.s_0.v.d[0]" "ttt.s_0.v.f"
+= "ttt.s_0.v.d[1]" "ttt.s_0.v.t"
+= "ttt.s_0.go.a" "ttt.s_0.in.a"
+= "ttt.s_0.in.d[0]" "ttt.s_0.in.f"
+= "ttt.s_0.in.d[1]" "ttt.s_0.in.t"
+= "ttt.s_0.in.d[0]" "ttt.s_0.in.f"
+= "ttt.s_0.in.d[1]" "ttt.s_0.in.t"
+= "ttt.s_0.v.f" "ttt.var_A_probe.v.f"
+= "ttt.s_0.v.t" "ttt.var_A_probe.v.t"
+= "ttt.s_0.v.d[0]" "ttt.var_A_probe.v.d[0]"
+= "ttt.s_0.v.d[1]" "ttt.var_A_probe.v.d[1]"
+= "ttt.s_0.v.d[0]" "ttt.s_0.v.f"
+= "ttt.s_0.v.d[1]" "ttt.s_0.v.t"
+"Reset"->"ttt.var_g_o.v.t"-
+"ttt.var_g_o.v.f"->"ttt.var_g_o.v.t"-
+"ttt.var_g_o.v.t"->"ttt.var_g_o.v.f"-
+weak ~"ttt.var_g_o.v.t"->"ttt.var_g_o.v.f"+
+weak ~"ttt.var_g_o.v.f"->"ttt.var_g_o.v.t"+
+= "ttt.var_g_o.v.d[0]" "ttt.var_g_o.v.f"
+= "ttt.var_g_o.v.d[1]" "ttt.var_g_o.v.t"
+= "ttt.var_g_o.v.d[0]" "ttt.var_g_o.v.f"
+= "ttt.var_g_o.v.d[1]" "ttt.var_g_o.v.t"
+"Reset"->"ttt.var_row_2.v.t"-
+"ttt.var_row_2.v.f"->"ttt.var_row_2.v.t"-
+"ttt.var_row_2.v.t"->"ttt.var_row_2.v.f"-
+weak ~"ttt.var_row_2.v.t"->"ttt.var_row_2.v.f"+
+weak ~"ttt.var_row_2.v.f"->"ttt.var_row_2.v.t"+
+= "ttt.var_row_2.v.d[0]" "ttt.var_row_2.v.f"
+= "ttt.var_row_2.v.d[1]" "ttt.var_row_2.v.t"
+= "ttt.var_row_2.v.d[0]" "ttt.var_row_2.v.f"
+= "ttt.var_row_2.v.d[1]" "ttt.var_row_2.v.t"
+"Reset"->"ttt.var_b_o.v.t"-
+"ttt.var_b_o.v.f"->"ttt.var_b_o.v.t"-
+"ttt.var_b_o.v.t"->"ttt.var_b_o.v.f"-
+weak ~"ttt.var_b_o.v.t"->"ttt.var_b_o.v.f"+
+weak ~"ttt.var_b_o.v.f"->"ttt.var_b_o.v.t"+
+= "ttt.var_b_o.v.d[0]" "ttt.var_b_o.v.f"
+= "ttt.var_b_o.v.d[1]" "ttt.var_b_o.v.t"
+= "ttt.var_b_o.v.d[0]" "ttt.var_b_o.v.f"
+= "ttt.var_b_o.v.d[1]" "ttt.var_b_o.v.t"
+"ttt.s_11.s1.a"&"ttt.s_11.s2.a"->"ttt.s_11._c"-
+~"ttt.s_11.s1.a"&~"ttt.s_11.s2.a"->"ttt.s_11._c"+
+"ttt.s_11._c"->"ttt.s_11.go.a"-
+~("ttt.s_11._c")->"ttt.s_11.go.a"+
+= "ttt.s_11.go.r" "ttt.s_11.s2.r"
+= "ttt.s_11.go.r" "ttt.s_11.s1.r"
+"Reset"->"ttt.var_x1_win.v.t"-
+"ttt.var_x1_win.v.f"->"ttt.var_x1_win.v.t"-
+"ttt.var_x1_win.v.t"->"ttt.var_x1_win.v.f"-
+weak ~"ttt.var_x1_win.v.t"->"ttt.var_x1_win.v.f"+
+weak ~"ttt.var_x1_win.v.f"->"ttt.var_x1_win.v.t"+
+= "ttt.var_x1_win.v.d[0]" "ttt.var_x1_win.v.f"
+= "ttt.var_x1_win.v.d[1]" "ttt.var_x1_win.v.t"
+= "ttt.var_x1_win.v.d[0]" "ttt.var_x1_win.v.f"
+= "ttt.var_x1_win.v.d[1]" "ttt.var_x1_win.v.t"
+"Reset"->"ttt.var_y.v.t"-
+"ttt.var_y.v.f"->"ttt.var_y.v.t"-
+"ttt.var_y.v.t"->"ttt.var_y.v.f"-
+weak ~"ttt.var_y.v.t"->"ttt.var_y.v.f"+
+weak ~"ttt.var_y.v.f"->"ttt.var_y.v.t"+
+= "ttt.var_y.v.d[0]" "ttt.var_y.v.f"
+= "ttt.var_y.v.d[1]" "ttt.var_y.v.t"
+= "ttt.var_y.v.d[0]" "ttt.var_y.v.f"
+= "ttt.var_y.v.d[1]" "ttt.var_y.v.t"
+"Reset"->"ttt.var_d.v.t"-
+"ttt.var_d.v.f"->"ttt.var_d.v.t"-
+"ttt.var_d.v.t"->"ttt.var_d.v.f"-
+weak ~"ttt.var_d.v.t"->"ttt.var_d.v.f"+
+weak ~"ttt.var_d.v.f"->"ttt.var_d.v.t"+
+= "ttt.var_d.v.d[0]" "ttt.var_d.v.f"
+= "ttt.var_d.v.d[1]" "ttt.var_d.v.t"
+= "ttt.var_d.v.d[0]" "ttt.var_d.v.f"
+= "ttt.var_d.v.d[1]" "ttt.var_d.v.t"
+"Reset"->"ttt.var_f_reset.v.t"-
+"ttt.var_f_reset.v.f"->"ttt.var_f_reset.v.t"-
+"ttt.var_f_reset.v.t"->"ttt.var_f_reset.v.f"-
+weak ~"ttt.var_f_reset.v.t"->"ttt.var_f_reset.v.f"+
+weak ~"ttt.var_f_reset.v.f"->"ttt.var_f_reset.v.t"+
+= "ttt.var_f_reset.v.d[0]" "ttt.var_f_reset.v.f"
+= "ttt.var_f_reset.v.d[1]" "ttt.var_f_reset.v.t"
+= "ttt.var_f_reset.v.d[0]" "ttt.var_f_reset.v.f"
+= "ttt.var_f_reset.v.d[1]" "ttt.var_f_reset.v.t"
+= "ttt.chan_D.d[0]" "ttt.chan_D.f"
+= "ttt.chan_D.d[1]" "ttt.chan_D.t"
+= "ttt.chan_D.a" "ttt.s_6.in.a"
+= "ttt.chan_D.f" "ttt.s_6.in.f"
+= "ttt.chan_D.t" "ttt.s_6.in.t"
+= "ttt.chan_D.d[0]" "ttt.s_6.in.d[0]"
+= "ttt.chan_D.d[1]" "ttt.s_6.in.d[1]"
+= "ttt.chan_D.d[0]" "ttt.chan_D.f"
+= "ttt.chan_D.d[1]" "ttt.chan_D.t"
+"Reset"->"ttt.var_a_ready_o.v.t"-
+"ttt.var_a_ready_o.v.f"->"ttt.var_a_ready_o.v.t"-
+"ttt.var_a_ready_o.v.t"->"ttt.var_a_ready_o.v.f"-
+weak ~"ttt.var_a_ready_o.v.t"->"ttt.var_a_ready_o.v.f"+
+weak ~"ttt.var_a_ready_o.v.f"->"ttt.var_a_ready_o.v.t"+
+= "ttt.var_a_ready_o.v.d[0]" "ttt.var_a_ready_o.v.f"
+= "ttt.var_a_ready_o.v.d[1]" "ttt.var_a_ready_o.v.t"
+= "ttt.var_a_ready_o.v.d[0]" "ttt.var_a_ready_o.v.f"
+= "ttt.var_a_ready_o.v.d[1]" "ttt.var_a_ready_o.v.t"
+"Reset"->"ttt.var_d_reset.v.t"-
+"ttt.var_d_reset.v.f"->"ttt.var_d_reset.v.t"-
+"ttt.var_d_reset.v.t"->"ttt.var_d_reset.v.f"-
+weak ~"ttt.var_d_reset.v.t"->"ttt.var_d_reset.v.f"+
+weak ~"ttt.var_d_reset.v.f"->"ttt.var_d_reset.v.t"+
+= "ttt.var_d_reset.v.d[0]" "ttt.var_d_reset.v.f"
+= "ttt.var_d_reset.v.d[1]" "ttt.var_d_reset.v.t"
+= "ttt.var_d_reset.v.d[0]" "ttt.var_d_reset.v.f"
+= "ttt.var_d_reset.v.d[1]" "ttt.var_d_reset.v.t"
+"Reset"->"ttt.var_o5_win.v.t"-
+"ttt.var_o5_win.v.f"->"ttt.var_o5_win.v.t"-
+"ttt.var_o5_win.v.t"->"ttt.var_o5_win.v.f"-
+weak ~"ttt.var_o5_win.v.t"->"ttt.var_o5_win.v.f"+
+weak ~"ttt.var_o5_win.v.f"->"ttt.var_o5_win.v.t"+
+= "ttt.var_o5_win.v.d[0]" "ttt.var_o5_win.v.f"
+= "ttt.var_o5_win.v.d[1]" "ttt.var_o5_win.v.t"
+= "ttt.var_o5_win.v.d[0]" "ttt.var_o5_win.v.f"
+= "ttt.var_o5_win.v.d[1]" "ttt.var_o5_win.v.t"
+= "ttt.chan_C.d[0]" "ttt.chan_C.f"
+= "ttt.chan_C.d[1]" "ttt.chan_C.t"
+= "ttt.chan_C.a" "ttt.s_4.in.a"
+= "ttt.chan_C.f" "ttt.s_4.in.f"
+= "ttt.chan_C.t" "ttt.s_4.in.t"
+= "ttt.chan_C.d[0]" "ttt.s_4.in.d[0]"
+= "ttt.chan_C.d[1]" "ttt.s_4.in.d[1]"
+= "ttt.chan_C.d[0]" "ttt.chan_C.f"
+= "ttt.chan_C.d[1]" "ttt.chan_C.t"
+"Reset"->"ttt.var_o3_win.v.t"-
+"ttt.var_o3_win.v.f"->"ttt.var_o3_win.v.t"-
+"ttt.var_o3_win.v.t"->"ttt.var_o3_win.v.f"-
+weak ~"ttt.var_o3_win.v.t"->"ttt.var_o3_win.v.f"+
+weak ~"ttt.var_o3_win.v.f"->"ttt.var_o3_win.v.t"+
+= "ttt.var_o3_win.v.d[0]" "ttt.var_o3_win.v.f"
+= "ttt.var_o3_win.v.d[1]" "ttt.var_o3_win.v.t"
+= "ttt.var_o3_win.v.d[0]" "ttt.var_o3_win.v.f"
+= "ttt.var_o3_win.v.d[1]" "ttt.var_o3_win.v.t"
+"Reset"->"ttt.var_draw.v.t"-
+"ttt.var_draw.v.f"->"ttt.var_draw.v.t"-
+"ttt.var_draw.v.t"->"ttt.var_draw.v.f"-
+weak ~"ttt.var_draw.v.t"->"ttt.var_draw.v.f"+
+weak ~"ttt.var_draw.v.f"->"ttt.var_draw.v.t"+
+= "ttt.var_draw.v.d[0]" "ttt.var_draw.v.f"
+= "ttt.var_draw.v.d[1]" "ttt.var_draw.v.t"
+= "ttt.var_draw.v.d[0]" "ttt.var_draw.v.f"
+= "ttt.var_draw.v.d[1]" "ttt.var_draw.v.t"
+= "ttt.chan_H.d[0]" "ttt.chan_H.f"
+= "ttt.chan_H.d[1]" "ttt.chan_H.t"
+= "ttt.chan_H.a" "ttt.s_14.in.a"
+= "ttt.chan_H.f" "ttt.s_14.in.f"
+= "ttt.chan_H.t" "ttt.s_14.in.t"
+= "ttt.chan_H.d[0]" "ttt.s_14.in.d[0]"
+= "ttt.chan_H.d[1]" "ttt.s_14.in.d[1]"
+= "ttt.chan_H.d[0]" "ttt.chan_H.f"
+= "ttt.chan_H.d[1]" "ttt.chan_H.t"
+"Reset"->"ttt.var_I_probe.v.t"-
+"ttt.var_I_probe.v.f"->"ttt.var_I_probe.v.t"-
+"ttt.var_I_probe.v.t"->"ttt.var_I_probe.v.f"-
+weak ~"ttt.var_I_probe.v.t"->"ttt.var_I_probe.v.f"+
+weak ~"ttt.var_I_probe.v.f"->"ttt.var_I_probe.v.t"+
+= "ttt.var_I_probe.v.d[0]" "ttt.var_I_probe.v.f"
+= "ttt.var_I_probe.v.d[1]" "ttt.var_I_probe.v.t"
+= "ttt.var_I_probe.v.d[0]" "ttt.var_I_probe.v.f"
+= "ttt.var_I_probe.v.d[1]" "ttt.var_I_probe.v.t"
+"Reset"->"ttt.var_x5_win.v.t"-
+"ttt.var_x5_win.v.f"->"ttt.var_x5_win.v.t"-
+"ttt.var_x5_win.v.t"->"ttt.var_x5_win.v.f"-
+weak ~"ttt.var_x5_win.v.t"->"ttt.var_x5_win.v.f"+
+weak ~"ttt.var_x5_win.v.f"->"ttt.var_x5_win.v.t"+
+= "ttt.var_x5_win.v.d[0]" "ttt.var_x5_win.v.f"
+= "ttt.var_x5_win.v.d[1]" "ttt.var_x5_win.v.t"
+= "ttt.var_x5_win.v.d[0]" "ttt.var_x5_win.v.f"
+= "ttt.var_x5_win.v.d[1]" "ttt.var_x5_win.v.t"
+"Reset"->"ttt.var_h.v.t"-
+"ttt.var_h.v.f"->"ttt.var_h.v.t"-
+"ttt.var_h.v.t"->"ttt.var_h.v.f"-
+weak ~"ttt.var_h.v.t"->"ttt.var_h.v.f"+
+weak ~"ttt.var_h.v.f"->"ttt.var_h.v.t"+
+= "ttt.var_h.v.d[0]" "ttt.var_h.v.f"
+= "ttt.var_h.v.d[1]" "ttt.var_h.v.t"
+= "ttt.var_h.v.d[0]" "ttt.var_h.v.f"
+= "ttt.var_h.v.d[1]" "ttt.var_h.v.t"
+"Reset"->"ttt.var_e_reset.v.t"-
+"ttt.var_e_reset.v.f"->"ttt.var_e_reset.v.t"-
+"ttt.var_e_reset.v.t"->"ttt.var_e_reset.v.f"-
+weak ~"ttt.var_e_reset.v.t"->"ttt.var_e_reset.v.f"+
+weak ~"ttt.var_e_reset.v.f"->"ttt.var_e_reset.v.t"+
+= "ttt.var_e_reset.v.d[0]" "ttt.var_e_reset.v.f"
+= "ttt.var_e_reset.v.d[1]" "ttt.var_e_reset.v.t"
+= "ttt.var_e_reset.v.d[0]" "ttt.var_e_reset.v.f"
+= "ttt.var_e_reset.v.d[1]" "ttt.var_e_reset.v.t"

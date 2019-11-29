@@ -1,23 +1,20 @@
-vector A ttt/chan_A/t ttt/chan_A/f
-vector A_ack ttt/chan_A/a
-vector B ttt/chan_B/t ttt/chan_B/f
-vector B_ack ttt/chan_B/a
-vector C ttt/chan_C/t ttt/chan_C/f
-vector C_ack ttt/chan_C/a
-vector D ttt/chan_D/t ttt/chan_D/f
-vector D_ack ttt/chan_D/a
-vector E ttt/chan_E/t ttt/chan_E/f
-vector E_ack ttt/chan_E/a
-vector F ttt/chan_F/t ttt/chan_F/f
-vector F_ack ttt/chan_F/a
-vector G ttt/chan_G/t ttt/chan_G/f
-vector G_ack ttt/chan_G/a
-vector H ttt/chan_H/t ttt/chan_H/f
-vector H_ack ttt/chan_H/a
-vector I ttt/chan_I/t ttt/chan_I/f
-vector I_ack ttt/chan_I/a
-vector R ttt/chan_RESET/t ttt/chan_RESET/f
-vector R_ack ttt/chan_RESET/a
+vector A ttt/var_A_PROBE/v/t ttt/var_A_PROBE/v/f
+
+vector B ttt/var_B_PROBE/v/t ttt/var_B_PROBE/v/f
+
+vector C ttt/var_C_PROBE/v/t ttt/chan_C_PROBE/v/f
+
+vector D ttt/var_D_PROBE/v/t ttt/var_D_PROBE/v/f
+vector E ttt/var_E_PROBE/v/t ttt/var_E_PROBE/v/f
+
+vector F ttt/var_F_PROBE/v/t ttt/chan_F_PROBE/v/f
+
+vector G ttt/var_G_PROBE/v/t ttt/var_G_PROBE/v/f
+
+vector H ttt/var_H_PROBE/v/t ttt/var_H_PROBE/v/f
+
+vector I ttt/var_I_PROBE/v/t ttt/var_I_PROBE/v/f
+
 vector X_WIN ttt/chan_X_WIN/t ttt/chan_X_WIN/f
 vector X_WIN_ack ttt/chan_X_WIN/a
 vector O_WIN ttt/chan_O_WIN/t ttt/chan_O_WIN/f
