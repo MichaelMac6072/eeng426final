@@ -1,7 +1,6 @@
 /* variable declarations */
 vars {
   int<1> turn;
-  int<1> init;
 
   int<1> a;
   int<1> a_x;
@@ -108,17 +107,9 @@ vars {
   int<1> x_win;
   int<1> o_win;
 
-  // For computational purposes
-  int<1> w;
-  int<1> x;
-  int<1> y;
-  int<1> z;
-  
-
   chan<1> A;
   chan<1> B;
   chan<1> C;
-	
   chan<1> D;
   chan<1> E;
   chan<1> F;
@@ -136,11 +127,10 @@ vars {
 chp {
 *[
 	
-	//Ready conditions. Looking at how the lab3 binary works, these will all be 0 upon initialization. 
+	// Ready conditions. Looking at how the lab3 binary works, these will all be 0 upon initialization. 
+	// Neither a_ready_x or a_ready_o can be true at once.	
 	
-	//[~init -> turn := 0, init := 1[] else -> skip];
-
-	(a_ready_x := nor3_1(a_x,a_o,turn), a_ready_o := nor3_negfirst_1(turn,a_x,a_o),
+	(a_ready_x := nor3_1(a_x,a_o,turn), a_ready_o := nor3_negfirst_1(turn,a_o,a_x),
 	b_ready_x := nor3_1(b_x,b_o,turn), b_ready_o := nor3_negfirst_1(turn,b_o,b_x),
 	c_ready_x := nor3_1(c_x,c_o,turn), c_ready_o := nor3_negfirst_1(turn,c_o,c_x),
 	d_ready_x := nor3_1(d_x,d_o,turn), d_ready_o := nor3_negfirst_1(turn,d_o,d_x),
@@ -148,45 +138,41 @@ chp {
 	f_ready_x := nor3_1(f_x,f_o,turn), f_ready_o := nor3_negfirst_1(turn,f_o,f_x),
 	g_ready_x := nor3_1(g_x,g_o,turn), g_ready_o := nor3_negfirst_1(turn,g_o,g_x),
 	h_ready_x := nor3_1(h_x,h_o,turn), h_ready_o := nor3_negfirst_1(turn,h_o,h_x),
-	i_ready_x := nor3_1(i_x,i_o,turn), i_ready_o := nor3_negfirst_1(turn,i_o,i_x));
-	
-	// Wait until a button is pushed.
-	
-	
-	(A?A_probe, B?B_probe, C?C_probe, D?D_probe, E?E_probe, F?F_probe, G?G_probe, H?H_probe, I?I_probe, RESET?RESET_probe);
-	
+	i_ready_x := nor3_1(i_x,i_o,turn), i_ready_o := nor3_negfirst_1(turn,i_o,i_x)),
 	
 	// Player moves
-	[A_probe -> [a_ready_x -> a_x := 1 [] a_ready_o -> a_o := 1 [] else -> skip]; a := 1; turn := ~turn
-	[] B_probe -> [b_ready_x -> b_x := 1 [] b_ready_o -> b_o := 1 [] else -> skip]; b := 1; turn := ~turn
-	[] C_probe -> [c_ready_x -> c_x := 1 [] c_ready_o -> c_o := 1 [] else -> skip]; c := 1; turn := ~turn
-	[] D_probe -> [d_ready_x -> d_x := 1 [] d_ready_o -> d_o := 1 [] else -> skip]; d := 1; turn := ~turn
-	[] E_probe -> [e_ready_x -> e_x := 1 [] e_ready_o -> e_o := 1 [] else -> skip]; e := 1; turn := ~turn
-	[] F_probe -> [f_ready_x -> f_x := 1 [] f_ready_o -> f_o := 1 [] else -> skip]; f := 1; turn := ~turn
-	[] G_probe -> [g_ready_x -> g_x := 1 [] g_ready_o -> g_o := 1 [] else -> skip]; g := 1; turn := ~turn
-	[] H_probe -> [h_ready_x -> h_x := 1 [] h_ready_o -> h_o := 1 [] else -> skip]; h := 1; turn := ~turn
-	[] I_probe -> [i_ready_x -> i_x := 1 [] i_ready_o -> i_o := 1 [] else -> skip]; i := 1; turn := ~turn
-	[] RESET_probe -> (a_reset := 1, b_reset := 1, c_reset := 1, d_reset := 1, e_reset := 1, f_reset := 1, g_reset := 1, h_reset := 1, i_reset := 1, turn := 0, draw := 0, x_win := 0, o_win := 0); (X_WIN!x_win, O_WIN!o_win, DRAW!draw) 
-	];
+	// Wait until a button is pushed.
+	// We are assuming mutual exclusion: only one button is pressed at a time.
+	(A?A_probe, B?B_probe, C?C_probe, D?D_probe, E?E_probe, F?F_probe, G?G_probe, H?H_probe, I?I_probe, RESET?RESET_probe);
 
+	// To have a variable filled, the probe has to be true AND the square has to be empty, OR it has to already be full.
+	a_x := and_or_1(A_probe,a_ready_x,a_x), a_o := and_or_1(A_probe,a_ready_o,a_o),
+	b_x := and_or_1(B_probe,b_ready_x,b_x), b_o := and_or_1(B_probe,b_ready_o,b_o),
+	c_x := and_or_1(C_probe,c_ready_x,c_x), c_o := and_or_1(C_probe,c_ready_o,c_o),
+	d_x := and_or_1(D_probe,d_ready_x,d_x), d_o := and_or_1(D_probe,d_ready_o,d_o),
+	e_x := and_or_1(E_probe,e_ready_x,e_x), e_o := and_or_1(E_probe,e_ready_o,e_o),
+	f_x := and_or_1(F_probe,f_ready_x,f_x), f_o := and_or_1(F_probe,f_ready_o,f_o),
+	g_x := and_or_1(G_probe,g_ready_x,g_x), g_o := and_or_1(G_probe,g_ready_o,g_o),
+	h_x := and_or_1(H_probe,h_ready_x,h_x), h_o := and_or_1(H_probe,h_ready_o,h_o),
+	i_x := and_or_1(I_probe,i_ready_x,i_x), i_o := and_or_1(I_probe,i_ready_o,i_o);
 
-	//Buffered reset of squares
+	// Flip the turn here.
+	[turn -> turn := 0 [] else -> turn := 1];
+	
+	// Check for resetting
+	[RESET_probe -> a_x := false, a_o := false, b_x := false, b_o := false, c_x := false, c_o := false, d_x := false, d_o := false,
+	e_x := false, e_o := false; f_x := false, f_o := false, g_x := false, g_o := false, h_x := false, h_o := false, i_x := false, i_o := false,
+	turn := false
+	[] else -> skip
+	]; 	
 
-	([a_reset -> (a_x := 0, a_o := 0, a:= 0); a_reset := 0 [] else -> skip],	
-	[b_reset -> (b_x := 0, b_o := 0, b:= 0); a_reset := 0 [] else -> skip],
-	[c_reset -> (c_x := 0, c_o := 0, c:= 0); a_reset := 0 [] else -> skip],	
-	[d_reset -> (d_x := 0, d_o := 0, d:= 0); a_reset := 0 [] else -> skip],
-	[e_reset -> (e_x := 0, e_o := 0, e:= 0); a_reset := 0 [] else -> skip],
-	[f_reset -> (f_x := 0, f_o := 0, f:= 0); a_reset := 0 [] else -> skip],
-	[g_reset -> (g_x := 0, g_o := 0, g:= 0); a_reset := 0 [] else -> skip],
-	[h_reset -> (h_x := 0, h_o := 0, h:= 0); a_reset := 0 [] else -> skip],
-	[i_reset -> (i_x := 0, i_o := 0, i:= 0); a_reset := 0 [] else -> skip]);
+	// Compute fullness
+	a := or_1(a_x,a_o), b:= or_1(b_x,b_o), c:=or_1(c_x,c_o), d:=or_1(d_x,d_o), e:=or_1(e_x,e_o), 
+	f:=or_1(f_x,f_o), g:=or_1(g_x,g_o), h:=or_1(h_x,h_o), i:=or_1(i_x,i_o);
 
 	//Win conditions
 
 	//First, see if either X or O got three in a row
-	
-	(
 	 x1_win := and3_1(a_x,b_x,c_x),	
 	 x2_win := and3_1(a_x,d_x,g_x),
 	 x3_win := and3_1(a_x,e_x,i_x), 
@@ -203,32 +189,36 @@ chp {
 	 o5_win := and3_1(d_o,e_o,f_o),
 	 o6_win := and3_1(g_o,h_o,i_o),
 	 o7_win := and3_1(c_o,e_o,g_o),
-	 o8_win := and3_1(c_o,f_o,i_o)	);
+	 o8_win := and3_1(c_o,f_o,i_o);	
 	
-	
-
 	x_win_1 := or4_1(x1_win,x2_win,x3_win,x4_win), x_win_2 := or4_1(x5_win,x6_win,x7_win,x8_win),
-	o_win_1 := or4_1(o1_win,o2_win,o3_win,o4_win), o_win_2 := or4_1(o5_win,o6_win,o7_win,o8_win),
+	o_win_1 := or4_1(o1_win,o2_win,o3_win,o4_win), o_win_2 := or4_1(o5_win,o6_win,o7_win,o8_win);
 	
 	x_win := or_1(x_win_1,x_win_2),
 	o_win := or_1(o_win_1,o_win_2),
-
+	
 	// If not, see if all squares are full for the draw condition.
 	row_1 := and3_1(a,b,c),
 	row_2 := and3_1(d,e,f),
-	row_3 := and3_1(g,h,i),
+	row_3 := and3_1(g,h,i);
 	full := and3_1(row_1,row_2,row_3);
 	draw := nor3_negfirst_1(full,x_win,o_win);
-	
-	
 
+	// Send the Results.
+	X_WIN!x_win, O_WIN!o_win, DRAW!draw;
+
+	//Reset the probes
+	A_probe := 0, B_probe := 0, C_probe := 0, D_probe := 0, E_probe := 0, F_probe := 0, G_probe := 0, H_probe := 0, I_probe := 0, RESET_probe := 0
+
+	/*
+	
+	// Determine if the game is over.
 	[  x_win -> X_WIN!x_win
 	[] o_win -> O_WIN!o_win
 	[] draw -> DRAW!draw
 	[] else -> skip
-	]
+	]	
 	
-	
-	
+	*/
 ]
 }

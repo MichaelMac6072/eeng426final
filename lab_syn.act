@@ -132,6 +132,25 @@ defproc syn_recv (a1of1 go; dualrail v; a1of2 in)
   }
 }
 
+defproc syn_send (a1of1 go; dualrail v; a1of2 out)
+{
+  bool _outt, _outf;
+  bool _outa;
+
+  prs {
+ ~_Reset | ~go.r & ~_outa -> _outt+
+  ~_Reset | ~go.r & ~_outa -> _outf+
+    go.r & v.t  & _outa -> _outt-
+   _outt => out.t-
+   go.r & v.f & _outa -> _outf-
+   _outf => out.f-
+ 
+
+  out.a => _outa-
+  _outa => go.a-
+  }
+}
+
 /*
  *
  *  Expression  evaluation
@@ -461,10 +480,11 @@ defproc bundled_nor3_negfirst_1 (bool go_r; dualrail v0; dualrail v1; dualrail v
    bool result, _result;
 
 	prs{
-		d.out => _dout-
+
+	d.out => _dout-
 		
-	  v0.f | v1.t | v2.t => result-
-		~result => _result+
+        v0.f | v1.t | v2.t => result-
+	~result => _result+
 		 
 	  d.out & result -> out.f-
       ~_dout & ~_result & ~out.f -> out.t+
@@ -500,6 +520,32 @@ defproc syn_skip (a1of1 go)
 {
   go.r = go.a;
 }
+
+/* Function that ANDs the first two booleans together and ORs them with the third*/
+defproc bundled_and_or_1(bool go_r; dualrail v0; dualrail v1; dualrail v2; dualrail out)
+{
+   delay<4> d;
+   bool _dout;
+   d.in = go_r;
+   bool result, _result;
+
+   prs{
+	d.out => _dout-	
+
+	(v0.t & v1.t) | v2.t => _result-
+	~_result => result+
+		 
+       d.out & result -> out.f-
+      ~_dout & ~_result & ~out.f -> out.t+
+      d.out & _result -> out.t-
+      ~_dout & ~result & ~out.t -> out.f+
+
+	_dout -> out.f-
+	_dout -> out.t-
+
+   }
+}
+
 
 /*
  * Simple sequencer

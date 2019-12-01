@@ -1,6 +1,8 @@
 h Vdd!
 l GND!
 h Reset
+
+
 vector A_CHAN ttt/chan_A/t ttt/chan_A/f
 vector A ttt/var_A_PROBE/v/t ttt/var_A_PROBE/v/f
 
@@ -28,7 +30,10 @@ vector H ttt/var_H_PROBE/v/t ttt/var_H_PROBE/v/f
 vector I_CHAN ttt/chan_I/t ttt/chan_I/f
 vector I ttt/var_I_PROBE/v/t ttt/var_I_PROBE/v/f
 
-ana A_CHAN A B_CHAN B C_CHAN C D_CHAN D F_CHAN F I_CHAN I ttt/go/r ttt/go/a
+vector turn ttt/var_turn/v/t ttt/var_turn/v/f
+
+
+ana A_CHAN A B_CHAN B C_CHAN C D_CHAN D F_CHAN F I_CHAN I turn ttt/go/r ttt/go/a
 setvector A_CHAN 00
 setvector B_CHAN 00
 setvector C_CHAN 00
