@@ -1,6 +1,6 @@
 import "lab_syn.act";
 
-defproc toplevel (a1of1 go)
+defproc toplevel (a1of1 go; a1of2 chan_A,chan_B,chan_C,chan_D,chan_E,chan_F,chan_G,chan_H,chan_I,chan_RESET; a1of2 chan_X_WIN,chan_O_WIN,chan_DRAW)
 {
  /* --- declaring all variables and channels --- */
  syn_var_init_false var_x2_win;
@@ -17,7 +17,7 @@ defproc toplevel (a1of1 go)
  syn_var_init_false var_C_probe;
  syn_var_init_false var_g;
  syn_var_init_false var_g_o;
- a1of2 chan_I;
+ //a1of2 chan_I;
  syn_var_init_false var_e;
  syn_var_init_false var_g_x;
  syn_var_init_false var_o2_win;
@@ -31,13 +31,13 @@ defproc toplevel (a1of1 go)
  syn_var_init_false var_c_o;
  syn_var_init_false var_d_o;
  syn_var_init_false var_I_probe;
- a1of2 chan_O_WIN;
+ //a1of2 chan_O_WIN;
  syn_var_init_false var_c_ready_o;
  syn_var_init_false var_d_ready_x;
  syn_var_init_false var_f_x;
  syn_var_init_false var_d_reset;
- a1of2 chan_RESET;
- a1of2 chan_A;
+ //a1of2 chan_RESET;
+ //a1of2 chan_A;
  syn_var_init_false var_o8_win;
  syn_var_init_false var_a_ready_o;
  syn_var_init_false var_c;
@@ -50,18 +50,18 @@ defproc toplevel (a1of1 go)
  syn_var_init_false var_c_reset;
  syn_var_init_false var_x_win;
  syn_var_init_false var_h_ready_o;
- a1of2 chan_G;
+ //a1of2 chan_G;
  syn_var_init_false var_x_win_1;
  syn_var_init_false var_x5_win;
  syn_var_init_false var_h_reset;
- a1of2 chan_H;
+ //a1of2 chan_H;
  syn_var_init_false var_row_1;
  syn_var_init_false var_o_win_2;
  syn_var_init_false var_x1_win;
  syn_var_init_false var_H_probe;
  syn_var_init_false var_i_ready_x;
  syn_var_init_false var_a_reset;
- a1of2 chan_F;
+ //a1of2 chan_F;
  syn_var_init_false var_draw;
  syn_var_init_false var_full;
  syn_var_init_false var_x6_win;
@@ -79,7 +79,7 @@ defproc toplevel (a1of1 go)
  syn_var_init_false var_A_probe;
  syn_var_init_false var_F_probe;
  syn_var_init_false var_i_o;
- a1of2 chan_C;
+ //a1of2 chan_C;
  syn_var_init_false var_d_x;
  syn_var_init_false var_g_ready_o;
  syn_var_init_false var_x8_win;
@@ -91,17 +91,17 @@ defproc toplevel (a1of1 go)
  syn_var_init_false var_b_ready_x;
  syn_var_init_false var_e_x;
  syn_var_init_false var_f_ready_x;
- a1of2 chan_DRAW;
- a1of2 chan_B;
+ //a1of2 chan_DRAW;
+ //a1of2 chan_B;
  syn_var_init_false var_B_probe;
  syn_var_init_false var_f_reset;
- a1of2 chan_E;
+ //a1of2 chan_E;
  syn_var_init_false var_o3_win;
  syn_var_init_false var_D_probe;
  syn_var_init_false var_e_ready_x;
  syn_var_init_false var_RESET_probe;
- a1of2 chan_D;
- a1of2 chan_X_WIN;
+ //a1of2 chan_D;
+ //a1of2 chan_X_WIN;
  syn_var_init_false var_x7_win;
  syn_var_init_false var_f;
  syn_var_init_false var_i;
