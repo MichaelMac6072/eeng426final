@@ -1,0 +1,131 @@
+import "channel.act"
+
+//a1of2 A,B,C,D,E,F,G,H,I,RESET,X_WIN,O_WIN,DRAW;
+//bool a,b,c,d,e,f,g,h,i,reset,x_win,o_win,in_ready,in_ack,out_ready,out_ack;
+
+defproc celem5 (bool a, b, c, d, e, out)
+{
+	bool _out;
+	prs {
+		a & b & c & d & e -> _out-
+		~a & ~b & ~c & ~d & ~e -> _out+
+		_out => out-
+		//~out -> _out+
+		out => _out-
+		//~_out -> out+
+	}
+}
+
+defproc celem2 (bool A, B, out)
+{
+	bool _out;
+	prs {
+		A & B -> out-
+		~A & ~B -> out+
+		out => _out-
+		//~out -> _out+
+		_out => out-
+		//~_out -> out+
+	}
+}
+
+defproc celem3 (bool A, B, C, out)
+{
+	bool _out;
+	prs {
+		A & B & C -> out-
+		~A & ~B & ~C -> out+
+		out => _out-
+		//~out -> _out+
+		_out => out-
+		//~_out -> out+
+	}
+}
+
+defproc inv (bool in, out)
+{
+	prs {
+		in -> out-
+		~in -> out+
+	}
+}
+
+defproc and2 (bool A, B, out)
+{
+	bool _out;
+	prs {
+		A & B -> _out-
+		~(A & B) -> _out+
+		_out => out-
+	}
+}
+
+defproc or2 (bool a, b, out)
+{
+	bool _out
+	prs {
+		a | b -> _out-
+		~(a | b) -> _out+
+		_out => out-
+	}
+}
+
+defproc in_interface(bool a,b,c,d,e,f,g,h,i,reset,in_ready,in_ack; bool go_r; a1of2 A,B,C,D,E,F,G,H,I,RESET)
+{
+
+	go_r = in_ready;
+
+	bool _a,_b,_c,_d,_e,_f,_g,_h,_i,_reset,in_ack_1,in_ack_2;
+	inv dual_a(a,_a);
+	inv dual_b(b,_b);
+	inv dual_c(c,_c);
+	inv dual_d(d,_d);
+	inv dual_e(e,_e);
+	inv dual_f(f,_f);
+	inv dual_g(g,_g);
+	inv dual_h(h,_h);
+	inv dual_i(i,_i);
+	inv dual_reset(reset,_reset);
+
+	and2 a_t(a,in_ready,A.t);
+	and2 a_f(_a,in_ready,A.f);
+	and2 b_t(b,in_ready,B.t);
+	and2 b_f(_b,in_ready,B.f);
+	and2 c_t(c,in_ready,C.t);
+	and2 c_f(_c,in_ready,C.f);
+	and2 d_t(d,in_ready,D.t);
+	and2 d_f(_d,in_ready,D.f);
+	and2 e_t(e,in_ready,E.t);
+	and2 e_f(_e,in_ready,E.f);
+	and2 f_t(f,in_ready,F.t);
+	and2 f_f(_f,in_ready,F.f);
+	and2 g_t(g,in_ready,G.t);
+	and2 g_f(_g,in_ready,G.f);
+	and2 h_t(h,in_ready,H.t);
+	and2 h_f(_h,in_ready,H.f);
+	and2 i_t(i,in_ready,I.t);
+	and2 i_f(_i,in_ready,I.f);
+	and2 reset_t(reset,in_ready,RESET.t);
+	and2 reset_f(_reset,in_ready,RESET.f);
+
+	celem5 ack_1(A.r,B.r,C.r,D.r,E.r,in_ack_1);
+	celem5 ack_2(F.r,G.r,H.r,I.r,RESET.r,in_ack_2);
+	celem2 ack(in_ack_1,in_ack_2,in_ack);
+} 
+
+defproc out_interface(a1of2 X_WIN,O_WIN,DRAW; bool x_win,o_win,draw,out_ready,out_ack)
+{
+	bool x_go,o_go,draw_go;
+	or2 x_ready(X_WIN.t,X_WIN,f,x_go);
+	or2 o_ready(O_WIN.t,O_WIN.f,o_go);
+	or2 draw_ready(DRAW.t,DRAW.f,draw_go);
+	celem3(x_go,o_go,draw_go,out_ready);
+
+	x_win = X_WIN.t;
+	o_win = O_WIN.t;
+	draw = DRAW.t;
+
+	X_WIN.r = out.ack;
+	O_WIN.r = out.ack;
+	DRAW.r = out.ack;
+}
