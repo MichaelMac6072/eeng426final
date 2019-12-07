@@ -1,0 +1,12 @@
+"two.A"&"two.B"->"two._out"-
+~"two.A"&~"two.B"->"two._out"+
+~"two._out"->"two.out"+
+~(~"two._out")->"two.out"-
+"five.a"&"five.b"&"five.c"&"five.d"&"five.e"->"five._out"-
+~"five.a"&~"five.b"&~"five.c"&~"five.d"&~"five.e"->"five._out"+
+"five._out"->"five.out"-
+~("five._out")->"five.out"+
+"five.out"->"five._out"-
+~("five.out")->"five._out"+
+"three.A"&"three.B"&"three.C"->"three.out"-
+~"three.A"&~"three.B"&~"three.C"->"three.out"+

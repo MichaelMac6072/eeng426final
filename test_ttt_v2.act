@@ -1,0 +1,2 @@
+import "ttt_v2.act";
+toplevel ttt;

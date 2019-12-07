@@ -160,11 +160,13 @@ chp {
 	[turn -> turn := 0 [] else -> turn := 1];
 	
 	// Check for resetting
+	/*
 	[RESET_probe -> a_x := false, a_o := false, b_x := false, b_o := false, c_x := false, c_o := false, d_x := false, d_o := false,
 	e_x := false, e_o := false; f_x := false, f_o := false, g_x := false, g_o := false, h_x := false, h_o := false, i_x := false, i_o := false,
 	turn := false
 	[] else -> skip
 	]; 	
+	*/
 
 	// Compute fullness
 	a := or_1(a_x,a_o), b:= or_1(b_x,b_o), c:=or_1(c_x,c_o), d:=or_1(d_x,d_o), e:=or_1(e_x,e_o), 

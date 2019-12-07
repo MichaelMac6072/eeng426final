@@ -1,0 +1,4 @@
+import "interfaces.act";
+celem2 two;
+celem3 three;
+celem5 five;

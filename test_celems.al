@@ -1,0 +1,2 @@
+= Vdd Vdd!
+= GND GND!

@@ -1,31 +1,32 @@
-import "channel.act"
+import "channel.act";
 
 //a1of2 A,B,C,D,E,F,G,H,I,RESET,X_WIN,O_WIN,DRAW;
 //bool a,b,c,d,e,f,g,h,i,reset,x_win,o_win,in_ready,in_ack,out_ready,out_ack;
 
 defproc celem5 (bool a, b, c, d, e, out)
 {
-	bool _out;
+	//bool _out;
 	prs {
-		a & b & c & d & e -> _out-
-		~a & ~b & ~c & ~d & ~e -> _out+
-		_out => out-
+		a & b & c & d & e -> out- //_out-
+		~a & ~b & ~c & ~d & ~e -> out+//_out+
+		//_out => out-
 		//~out -> _out+
-		out => _out-
 		//~_out -> out+
 	}
 }
 
 defproc celem2 (bool A, B, out)
 {
-	bool _out;
+	//bool _out;
 	prs {
 		A & B -> out-
 		~A & ~B -> out+
-		out => _out-
-		//~out -> _out+
+		//~_out => out+
+		/*
+		_out => temp_out-
+		~temp_out => _out+
 		_out => out-
-		//~_out -> out+
+		*/
 	}
 }
 
@@ -33,15 +34,17 @@ defproc celem3 (bool A, B, C, out)
 {
 	bool _out;
 	prs {
-		A & B & C -> out-
-		~A & ~B & ~C -> out+
-		out => _out-
-		//~out -> _out+
+		A & B & C -> _out-
+		~A & ~B & ~C -> _out+
+		
 		_out => out-
+		/*~out -> _out+
+		//_out => out-
 		//~_out -> out+
+		*/
 	}
 }
-
+/*
 defproc inv (bool in, out)
 {
 	prs {
@@ -49,7 +52,7 @@ defproc inv (bool in, out)
 		~in -> out+
 	}
 }
-
+*/
 defproc and2 (bool A, B, out)
 {
 	bool _out;
@@ -62,7 +65,7 @@ defproc and2 (bool A, B, out)
 
 defproc or2 (bool a, b, out)
 {
-	bool _out
+	bool _out;
 	prs {
 		a | b -> _out-
 		~(a | b) -> _out+
@@ -70,10 +73,10 @@ defproc or2 (bool a, b, out)
 	}
 }
 
-defproc in_interface(bool a,b,c,d,e,f,g,h,i,reset,in_ready,in_ack; bool go_r; a1of2 A,B,C,D,E,F,G,H,I,RESET)
+defproc in_interface(bool a,b,c,d,e,f,g,h,i,reset,in_ready,in_ack; a1of1 go_r; a1of2 A,B,C,D,E,F,G,H,I,RESET)
 {
 
-	go_r = in_ready;
+	go_r.r = in_ready;
 
 	bool _a,_b,_c,_d,_e,_f,_g,_h,_i,_reset,in_ack_1,in_ack_2;
 	inv dual_a(a,_a);
@@ -108,24 +111,30 @@ defproc in_interface(bool a,b,c,d,e,f,g,h,i,reset,in_ready,in_ack; bool go_r; a1
 	and2 reset_t(reset,in_ready,RESET.t);
 	and2 reset_f(_reset,in_ready,RESET.f);
 
-	celem5 ack_1(A.r,B.r,C.r,D.r,E.r,in_ack_1);
-	celem5 ack_2(F.r,G.r,H.r,I.r,RESET.r,in_ack_2);
+	celem5 ack_1(A.a,B.a,C.a,D.a,E.a,in_ack_1);
+	celem5 ack_2(F.a,G.a,H.a,I.a,RESET.a,in_ack_2);
 	celem2 ack(in_ack_1,in_ack_2,in_ack);
 } 
 
 defproc out_interface(a1of2 X_WIN,O_WIN,DRAW; bool x_win,o_win,draw,out_ready,out_ack)
 {
 	bool x_go,o_go,draw_go;
-	or2 x_ready(X_WIN.t,X_WIN,f,x_go);
+	or2 x_ready(X_WIN.t,X_WIN.f,x_go);
 	or2 o_ready(O_WIN.t,O_WIN.f,o_go);
 	or2 draw_ready(DRAW.t,DRAW.f,draw_go);
-	celem3(x_go,o_go,draw_go,out_ready);
+	celem3 go(x_go,o_go,draw_go,out_ready);
 
 	x_win = X_WIN.t;
 	o_win = O_WIN.t;
 	draw = DRAW.t;
 
-	X_WIN.r = out.ack;
-	O_WIN.r = out.ack;
-	DRAW.r = out.ack;
+	X_WIN.a = out_ack;
+	O_WIN.a = out_ack;
+	DRAW.a = out_ack;
 }
+/*
+defproc toplevel () {
+	in_interface in;
+	out_interface out;
+}
+*/

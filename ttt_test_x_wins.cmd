@@ -29,8 +29,9 @@ vector I_PROBE ttt/var_I_PROBE/v/t ttt/var_I_PROBE/v/f
 
 vector RESET_CHAN ttt/chan_RESET/t ttt/chan_RESET/f
 vector turn ttt/var_turn/v/t ttt/var_turn/v/f
-vector o_win ttt/var_o_win/v/t ttt/var_o_win/v/f
-vector x_win ttt/var_x_win/v/t ttt/var_x_win/v/f
+
+vector X_WIN ttt/chan_X_WIN/t ttt/chan_X_WIN/f
+vector O_WIN ttt/chan_O_WIN/t ttt/chan_O_WIN/f
 
 vector a_x ttt/var_a_x/v/t ttt/var_a_x/v/f
 vector a_o ttt/var_a_o/v/t ttt/var_a_o/v/f
@@ -43,7 +44,7 @@ vector b ttt/var_b/v/t ttt/var_b/v/f
 vector c_x ttt/var_c_x/v/t ttt/var_c_x/v/f
 vector c_o ttt/var_c_o/v/t ttt/var_c_o/v/f
 
-ana A_CHAN A_PROBE B_CHAN B_PROBE C_CHAN C_PROBE D_CHAN D_PROBE F_CHAN F_PROBE I_CHAN I_PROBE turn ttt/go/r x_win o_win
+ana A_CHAN A_PROBE B_CHAN B_PROBE C_CHAN C_PROBE D_CHAN D_PROBE F_CHAN F_PROBE I_CHAN I_PROBE turn ttt/go/r X_WIN O_WIN
 ana a_x a_o a b_x b_o b c_x c_o
 
 h Vdd!
